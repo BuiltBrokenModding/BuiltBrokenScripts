@@ -13,8 +13,3 @@ minecraft{
     runDir = "run"
 }
 
-// This is used to set the local version
-if (project.hasProperty("bambooBuildNumber"))
-    version += project.bambooBuildNumber
-else
-    version += "NIGHTLY"
