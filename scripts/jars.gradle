@@ -1,0 +1,32 @@
+task javadocJar(type: Jar, dependsOn: 'javadoc') {
+     from javadoc.destinationDir
+    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "javadoc-dev" 
+    else classifier = "javadoc" 
+    destinationDir = file 'output'
+}
+
+jar { 
+   	if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "dev"
+    else classifier = ""
+   	destinationDir = file 'output'
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "deobf-dev" 
+    else classifier = "deobf" 
+    classifier = 'dev'
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.output
+    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "src-dev" 
+    else classifier = "src" 
+    destinationDir = file 'output'
+}
+
+artifacts {
+    archives jar
+    archives sourcesJar
+    archives deobfJar
+}

@@ -1,0 +1,20 @@
+publishing {
+    publications {
+        mavenJava(MavenPublication)
+        {
+            artifact jar
+            artifact deobfJar
+            artifact("output/build.properties") {
+                classifier "build"
+                extension "properties"
+            }
+            from project.components.java
+        }
+    }
+
+    repositories {
+        maven {
+            url "file://C:/Users/Admin/Desktop/Minecraft/maven"
+        }
+    }
+}
