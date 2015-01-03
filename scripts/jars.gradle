@@ -25,6 +25,22 @@ task sourcesJar(type: Jar) {
     destinationDir = file 'output'
 }
 
+task copyBuildXml(type: Copy) {
+    from 'build.properties'
+    into 'output'
+}
+
+task apiZip(type: Zip) {
+    classifier = 'api'
+    from sourceSets*.allSource
+    include 'icbm/api/**'
+    destinationDir = file 'output'
+}
+
+artifacts {
+    archives apiZip
+}
+
 artifacts {
     archives jar
     archives sourcesJar
