@@ -1,5 +1,13 @@
 ext.configFile = file "./BuiltBrokenScripts/Forge.properties"
 
+configFile.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    ext.config = new ConfigSlurper().parse prop
+}
+
+apply plugin: 'forge'
+
 minecraft{
     version = "${config.version.minecraft}-${config.version.forge}"
     runDir = "run"

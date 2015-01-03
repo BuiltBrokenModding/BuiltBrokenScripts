@@ -14,12 +14,12 @@ jar {
 task deobfJar(type: Jar) {
     from sourceSets.main.output
     if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "deobf-dev" 
-    else classifier = "deobf" 
-    classifier = 'dev'
+    else classifier = "deobf"
+    destinationDir = file 'output'
 }
 
 task sourcesJar(type: Jar) {
-    from sourceSets.main.output
+    from sourceSets.main.allJava
     if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "src-dev" 
     else classifier = "src" 
     destinationDir = file 'output'
