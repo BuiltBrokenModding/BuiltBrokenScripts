@@ -1,0 +1,4 @@
+apply from: './scripts/builtbroken.gradle'
+apply from: './scripts/maven.gradle'
+apply from: './scripts/curse.gradle'
+apply from: './scripts/jars.gradle'
