@@ -6,6 +6,7 @@ configFile.withReader {
     ext.config = new ConfigSlurper().parse prop
 }
 
+apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft{
