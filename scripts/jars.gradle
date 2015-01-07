@@ -1,26 +1,22 @@
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
-    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "javadoc-dev" 
+    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "javadoc-dev" 
     else classifier = "javadoc" 
     destinationDir = file 'output'
 }
 
-jar { 
-   	if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "dev"
-    else classifier = ""
-   	destinationDir = file 'output'
-}
+
 
 task deobfJar(type: Jar) {
     from sourceSets.main.output
-    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "deobf-dev" 
+    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "deobf-dev" 
     else classifier = "deobf"
     destinationDir = file 'output'
 }
 
 task sourcesJar(type: Jar) {
     from sourceSets.main.allJava
-    if (project.getProperty("bambooshortPlanName") == "NEK-Dev") classifier = "src-dev" 
+    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "src-dev" 
     else classifier = "src" 
     destinationDir = file 'output'
 }
@@ -33,16 +29,13 @@ task copyBuildXml(type: Copy) {
 task apiZip(type: Zip) {
     classifier = 'api'
     from sourceSets*.allSource
-    include 'icbm/api/**'
+    include 'com/builtroken/mc/api/**'
     destinationDir = file 'output'
 }
 
-artifacts {
-    archives apiZip
-}
-
-artifacts {
-    archives jar
-    archives sourcesJar
-    archives deobfJar
+jar { 
+    dependsOn copyBuildXml
+   	if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "dev"
+    else classifier = ""
+   	destinationDir = file 'output'
 }
