@@ -9,7 +9,6 @@ publishing {
                 classifier "build"
                 extension "properties"
             }
-            from project.components.java
         }
     }
 
