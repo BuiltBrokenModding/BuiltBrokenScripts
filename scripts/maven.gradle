@@ -14,7 +14,10 @@ publishing {
 
     repositories {
         maven {
-            url "file:///var/www/html/maven"
+            if (project.getProperty("local") == "true")
+                url "file:" + projectDir.path + "/build/maven"
+            else
+                url "file:///var/www/html/maven"
         }
     }
 }
