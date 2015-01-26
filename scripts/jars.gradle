@@ -5,8 +5,6 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
     destinationDir = file 'output'
 }
 
-
-
 task deobfJar(type: Jar) {
     from sourceSets.main.output
     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev" 
@@ -34,7 +32,7 @@ task apiZip(type: Zip) {
 }
 
 jar { 
-    dependsOn copyBuildXml
+    dependsOn copyBuildXml, printDeps
    	if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
     else classifier = ""
    	destinationDir = file 'output'

@@ -14,3 +14,6 @@ minecraft{
     runDir = "run"
 }
 
+task printDeps { 
+println configurations.compile.collect { it.getName() } 
+}
