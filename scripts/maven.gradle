@@ -9,13 +9,15 @@ publishing {
                 classifier "build"
                 extension "properties"
             }
-            from project.components.java
         }
     }
 
     repositories {
         maven {
-            url "file://C:/Users/Admin/Desktop/Minecraft/maven"
+            if (project.hasProperty("local") && project.getProperty("local") == "true")
+                url "file:" + projectDir.path + "/build/maven"
+            else
+                url "file:///var/www/html/maven"
         }
     }
 }

@@ -1,6 +1,6 @@
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
-    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "javadoc-dev" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev" 
     else classifier = "javadoc" 
     destinationDir = file 'output'
 }
@@ -9,14 +9,14 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
 
 task deobfJar(type: Jar) {
     from sourceSets.main.output
-    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "deobf-dev" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev" 
     else classifier = "deobf"
     destinationDir = file 'output'
 }
 
 task sourcesJar(type: Jar) {
     from sourceSets.main.allJava
-    if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "src-dev" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "src-dev" 
     else classifier = "src" 
     destinationDir = file 'output'
 }
@@ -35,7 +35,7 @@ task apiZip(type: Zip) {
 
 jar { 
     dependsOn copyBuildXml
-   	if (project.getProperty("bambooshortPlanName") == "Voltz-Dev") classifier = "dev"
+   	if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
     else classifier = ""
    	destinationDir = file 'output'
 }
