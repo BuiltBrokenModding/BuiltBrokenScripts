@@ -15,5 +15,15 @@ minecraft{
 }
 
 task printDeps { 
-println configurations.compile.collect { it.getName() } 
+doLast { println configurations.compile.collect { it.getName() }  }
 }
+
+task printDependencies {
+    doLast {
+         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
+     }
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupDevWorkspace"
+     mustRunAfter "setupCIWorkspace"
+}
+tasks.build.dependsOn printDependencies
