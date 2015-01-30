@@ -8,7 +8,10 @@ publishing {
             artifact("output/build.properties") {
                 classifier "build"
                 extension "properties"
-            artifact ("CompiledWith.txt")
+            }
+            artifact ("CompiledWith.txt") {
+                classifier "CompiledWith"
+                extension "txt"
             }
         }
     }
