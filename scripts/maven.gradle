@@ -14,7 +14,15 @@ publishing {
                 extension "txt"
             }
         }
+        myPublication(MavenPublication) {      
+      pom.withXml {
+        from components.java
+        asNode().appendNode('description', 'Created on ' + getDate())        
+        def deps = configurations.compile.allDependencies
+        def dep_node = asNode().appendNode('dependencies')
+      }
     }
+  }
 
     repositories {
         maven {
@@ -24,4 +32,10 @@ publishing {
                 url "file:///var/www/html/maven"
         }
     }
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmmss')
+    return formattedDate
 }
