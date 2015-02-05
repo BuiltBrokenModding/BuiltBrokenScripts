@@ -1,0 +1,40 @@
+/**
+ * Generates a Bamboo XML changelog via the REST API.
+ */
+task("createChangelog").doLast {
+
+    def bambooURL = "http://ci.builtbroken.com:8085/"
+
+    /**
+     * Create a new file
+     */
+    def file = new FileOutputStream("changelog.xml")
+    def out = new BufferedOutputStream(file)
+
+    /**
+     * Grab the build first, parse the XML to find the changelog XML URL
+     */
+    def changesXML = new XmlSlurper().parse(bambooURL + "rest/api/latest/result/" + project.bambooPlanKey + "/" + project.bambooBuildNumber + "?expand=changes.change")
+    def changes = changesXML.changes
+
+    /**
+     * Add the XML definition header in the front of the file and remove all other occurrences of the XML header
+     */
+    out << ("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><changes>")
+
+    println("createChangelog: Identified " + changes.size() + " changes to be written into the changelog.")
+
+
+    for (int i = 0; i < changes.size(); i++) {
+        /**
+         * Write each changelog XML into the URL
+         */
+        def changelogURL = bambooURL + "rest/api/latest/result/" + project.bambooPlanKey + "/" + project.bambooBuildNumber + "?expand=changes.change" + changes[i].@id.text()
+        out << new URL(changelogURL).getText().replaceAll("<\\?xml version=\"1\\.0\" encoding=\"UTF-8\" standalone=\"yes\"\\?>", "")
+    }
+    println("Looking in " + changesXML + "found" + changes.size() )
+    
+    out << "</changes>"
+
+    out.close()
+}

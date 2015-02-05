@@ -31,9 +31,12 @@ task apiZip(type: Zip) {
     destinationDir = file 'output'
 }
 
+def currentJvm = org.gradle.internal.jvm.Jvm.current()
+
 jar { 
     dependsOn copyBuildXml, printDeps
    	if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
-    else classifier = ""
+    //else classifier = ""
    	destinationDir = file 'output'
 }
+
