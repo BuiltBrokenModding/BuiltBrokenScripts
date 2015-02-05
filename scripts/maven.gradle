@@ -16,7 +16,7 @@ publishing {
             if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
-                extension "zml"
+                extension "xml"
             }
         }
         myPublication(MavenPublication) {      
