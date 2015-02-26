@@ -14,7 +14,7 @@ minecraft{
     runDir = "run"
 }
 
-task printDeps { 
+task printDeps {
 doLast { println configurations.compile.collect { it.getName() }  }
 }
 
