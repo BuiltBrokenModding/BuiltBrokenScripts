@@ -1,21 +1,21 @@
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
-    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev" 
-    else classifier = "javadoc" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
+    else classifier = "javadoc"
     destinationDir = file 'output'
 }
 
 task deobfJar(type: Jar) {
     from sourceSets.main.output
-    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
     else classifier = "deobf"
     destinationDir = file 'output'
 }
 
 task sourcesJar(type: Jar) {
     from sourceSets.main.allJava
-    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "src-dev" 
-    else classifier = "src" 
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "src-dev"
+    else classifier = "src"
     destinationDir = file 'output'
 }
 
@@ -33,10 +33,9 @@ task apiZip(type: Zip) {
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 
-jar { 
+jar {
     dependsOn copyBuildXml, printDeps
    	if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
     //else classifier = ""
    	destinationDir = file 'output'
 }
-
