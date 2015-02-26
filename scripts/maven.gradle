@@ -19,10 +19,10 @@ publishing {
                 extension "xml"
             }
         }
-        myPublication(MavenPublication) {      
+        myPublication(MavenPublication) {
       pom.withXml {
         from components.java
-        asNode().appendNode('description', 'Created on ' + getDate())        
+        asNode().appendNode('description', 'Created on ' + getDate())
         def deps = configurations.compile.allDependencies
         def dep_node = asNode().appendNode('dependencies')
       }
