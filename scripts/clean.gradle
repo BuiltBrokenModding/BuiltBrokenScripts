@@ -1,7 +1,9 @@
-
+//nukes the output dir
 task makePretty(type: Delete) {
   delete 'output'
 }
+
+//makes clean nuke the output dir.
 clean{
    dependsOn makePretty
 }

@@ -2,7 +2,7 @@
  * Generates a Bamboo XML changelog via the REST API.
  */
 task("createChangelog").doLast {
-
+    //defines the bambo url
     def bambooURL = "http://ci.builtbroken.com:8085/"
 
     /**
@@ -14,6 +14,7 @@ task("createChangelog").doLast {
     /**
      * Grab the build first, parse the XML to find the changelog XML URL
      */
+     //reads the bamboo rest api with the project arguments.
     def changesXML = new XmlSlurper().parse(bambooURL + "rest/api/latest/result/" + project.bambooPlanKey + "/" + project.bambooBuildNumber + "?expand=changes.change")
     def changes = changesXML.changes
 

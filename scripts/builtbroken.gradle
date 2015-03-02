@@ -5,20 +5,24 @@ configFile.withReader {
     prop.load(it)
     ext.config = new ConfigSlurper().parse prop
 }
-
+//Applies the scala plugin
 apply plugin: 'scala'
+//applies the forge plugin
 apply plugin: 'forge'
 
 minecraft{
+    //uses Forge.Properties arguments as a minecraft and a forge version
     version = "${config.version.minecraft}-${config.version.forge}"
     runDir = "run"
 }
 
+//Prints the dependencies that he project was built woth to the console to the console
 task printDeps {
 doLast { println configurations.compile.collect { it.getName() }  }
 }
 
 task printDependencies {
+    //dumpes what the project was compiled with into a text file.
     doLast {
          file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
      }
