@@ -31,6 +31,7 @@ publishing {
 
     repositories {
         maven {
+        //checks for a the local property as a gradle argument and if exists outputs to a local dir.
             if (project.hasProperty("local") && project.getProperty("local") == "true")
                 url "file:" + projectDir.path + "/build/maven"
             else
