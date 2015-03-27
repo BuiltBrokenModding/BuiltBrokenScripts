@@ -8,7 +8,7 @@ if /i {%ANSWER%}=={yes} (goto :idea)
 goto :eclipse
 
 :idea
-gradlew setupdecompworkspace IDEA genIntellijRuns -PbambooshortPlanName=VoltzEngine -Pdmodcurse=61545 --refresh-dependencies
+gradlew setupdecompworkspace IDEA genIntellijRuns -PbambooshortPlanName=BBM-Dev -Pdmodcurse=61545 --refresh-dependencies
 
 :eclipse
-gradlew setupdecompworkspace cleanEclipse eclipse -PbambooshortPlanName=VoltzEngine --refresh-dependencies
+gradlew setupdecompworkspace cleanEclipse eclipse -PbambooshortPlanName=BBM-Dev --refresh-dependencies
