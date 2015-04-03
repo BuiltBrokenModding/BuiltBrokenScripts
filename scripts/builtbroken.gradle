@@ -16,7 +16,9 @@ buildscript {
     }
 }
 
-ext.configFile = url "https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties"
+def data = new URL(https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties).getText()
+
+ext.configFile = data
 
 configFile.withReader {
     def prop = new Properties()
