@@ -21,9 +21,11 @@ import java.io.Reader
 def data = new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties").getText()
 ext.configFile = data
 
-def prop = new Properties()
-prop.load(configFile)
-ext.config = new ConfigSlurper().parse prop
+configFile.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    ext.config = new ConfigSlurper().parse prop
+}
 
 //configFile.withReader {
 //    def prop = new Properties()
