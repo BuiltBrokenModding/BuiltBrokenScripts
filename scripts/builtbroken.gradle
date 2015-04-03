@@ -16,7 +16,7 @@ buildscript {
     }
 }
 
-ext.configFile = file "./BuiltBrokenScripts/Forge.properties"
+ext.configFile = file "https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/builtbroken.gradle"
 
 configFile.withReader {
     def prop = new Properties()
