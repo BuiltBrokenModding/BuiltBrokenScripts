@@ -1,7 +1,7 @@
 /**
  * Generates a Bamboo XML changelog via the REST API.
  */
-task("createChangelog").doLast {
+task("createChangelogBamboo").doLast {
     //defines the bambo url
     def bambooURL = "http://ci.builtbroken.com:8085/"
 
