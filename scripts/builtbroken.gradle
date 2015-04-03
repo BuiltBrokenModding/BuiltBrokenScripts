@@ -16,10 +16,7 @@ buildscript {
     }
 }
 
-import java.io.Reader
-
-def data = new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties").getText()
-ext.configFile = data
+ext.configFile = new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties").inputStream
 
 configFile.withReader {
     def prop = new Properties()
