@@ -15,7 +15,7 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
 }
-load(java.io.InputStream)
+import java.io.InputStream
 
 def data = new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties").getText()
 ext.configFile = data
