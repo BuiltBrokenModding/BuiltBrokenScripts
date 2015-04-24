@@ -3,22 +3,18 @@ plugins {
 }
 
 def curseRelationsVE = {
-    requiredLibrary 'cofhcore'
-    requiredLibrary 'thermal-foundation'
-    requiredLibrary 'redstone-arsenal'
-    requiredLibrary 'ttcore'
-    requiredLibrary 'thermalexpansion'
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     
 }
 
 def curseRelations = {
-    requiredLibrary 'cofhcore'
-    requiredLibrary 'thermal-foundation'
-    requiredLibrary 'redstone-arsenal'
-    requiredLibrary 'ttcore'
-    requiredLibrary 'thermalexpansion'
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
     requiredLibrary 'voltz-engine'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
