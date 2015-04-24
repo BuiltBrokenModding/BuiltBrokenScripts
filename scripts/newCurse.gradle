@@ -8,6 +8,7 @@ def curseRelationsVE = {
     optionalLibrary 'thermalexpansion'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
     
 }
 
@@ -18,6 +19,7 @@ def curseRelations = {
     requiredLibrary 'voltz-engine'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
     
 }
 
