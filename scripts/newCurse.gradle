@@ -23,8 +23,12 @@ def curseRelations = {
 
 curseforge {
   project {
+  // VoltzEngine
     id = "227048"
-    relatedProject 'voltz-engine': 'requiredLibrary'
+    relations curseRelationsVE
+    changelog = ""
+    releaseType = "alpha"
+    addGameVersion "1.7.10"
   }
   project {
     id = '456'
