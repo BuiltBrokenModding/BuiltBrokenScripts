@@ -14,7 +14,6 @@ curseforge {
 
 curse {
     apiKey = project.dmodcurse
-    projectId = 
     // my project url is http://minecraft.curseforge.com/mc-mods/227048-voltz-engine
     changelog = ""
     releaseType = "alpha"
