@@ -2,6 +2,29 @@ plugins {
   id 'com.matthewprenger.cursegradle' version '1.0.1'
 }
 
+def curseRelationsVE = {
+    requiredLibrary 'cofhcore'
+    requiredLibrary 'thermal-foundation'
+    requiredLibrary 'redstone-arsenal'
+    requiredLibrary 'ttcore'
+    requiredLibrary 'thermalexpansion'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    
+}
+
+def curseRelations = {
+    requiredLibrary 'cofhcore'
+    requiredLibrary 'thermal-foundation'
+    requiredLibrary 'redstone-arsenal'
+    requiredLibrary 'ttcore'
+    requiredLibrary 'thermalexpansion'
+    requiredLibrary 'voltz-engine'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    
+}
+
 curseforge {
   project {
     id = "227048"
