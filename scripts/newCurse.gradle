@@ -24,7 +24,7 @@ def curseRelations = {
 }
 
 curseforge {
-apiKey = project.dmodcurse
+  apiKey = project.dmodcurse
   project {
   // VoltzEngine
     id = "227048"
