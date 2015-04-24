@@ -31,7 +31,11 @@ curseforge {
     addGameVersion "1.7.10"
   }
   project {
-    id = '456'
+    id = '225502'
+    relations curseRelations
+    changelog = ""
+    releaseType = "alpha"
+    addGameVersion "1.7.10"
   }
 }
 
