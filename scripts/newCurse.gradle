@@ -33,12 +33,19 @@ curseforge {
     changelog = ""
     releaseType = "alpha"
     addGameVersion "1.7.10"
+    mainArtifact(jar) {
+      displayName = "VoltzEngine version: $project.version"
+    }
   }
   project {
+  //ICBM
     id = '225502'
     relations curseRelations
     changelog = ""
     releaseType = "alpha"
     addGameVersion "1.7.10"
+    mainArtifact(jar) {
+      displayName = "ICBM version: $project.version"
+    }
   }
 }
