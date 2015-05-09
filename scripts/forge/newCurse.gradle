@@ -1,6 +1,4 @@
-plugins {
-  id 'com.matthewprenger.cursegradle' version '1.0.1'
-}
+
 
 def curseRelationsVE = {
     optionalLibrary 'cofhcore'
