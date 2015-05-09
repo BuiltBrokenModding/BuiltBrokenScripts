@@ -1,5 +1,3 @@
-
-
 def curseRelationsVE = {
     optionalLibrary 'cofhcore'
     optionalLibrary 'thermal-foundation'
