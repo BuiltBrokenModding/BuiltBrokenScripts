@@ -31,7 +31,7 @@ apply plugin: 'forge'
 
 minecraft{
     //uses Forge.Properties arguments as a minecraft and a forge version
-    version = "1.7.10-10.13.3.1401-1710ls"
+    version = File configFile = file('https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties')
     runDir = "run"
 }
 
