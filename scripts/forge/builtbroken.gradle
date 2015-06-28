@@ -26,8 +26,6 @@ task ("DownloadFP", type: Download)
     dest ./
 }
 
-//File configFile = file("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties")
- 
 ext.configFile = file "./Forge.properties"
 
 configFile.withReader {
