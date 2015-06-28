@@ -16,7 +16,7 @@ buildscript {
     }
 }
 
-File configFile = file('https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties')
+File configFile = file("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties")
  
 //configFile.withReader {
 //    def prop = new Properties()
