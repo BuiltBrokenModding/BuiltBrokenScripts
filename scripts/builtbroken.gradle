@@ -26,7 +26,7 @@ task ("DownloadFP", type: Download)
     dest ./;
 }
 
-ext.configFile = file "./Forge.properties"
+ext.configFile = file "./Forge.properties";
 
 configFile.withReader {
     def prop = new Properties()
