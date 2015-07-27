@@ -6,8 +6,8 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
     destinationDir = file 'output'
 }
 
-task deobfJar(type: Jar) {
-    dependsOn javadocJar
+task deobfJar(type: Jar, dependsOn: 'javadoc') {
+    //dependsOn javadocJar
     from sourceSets.main.output
     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
