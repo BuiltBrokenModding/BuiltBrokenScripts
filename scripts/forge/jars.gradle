@@ -7,12 +7,14 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
 }
 
 task deobfJar(type: Jar) {
-     from sourceSets.main.output
-     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
-     else classifier = "deobf"
-     //sets where the jars go to.
-     destinationDir = file 'output'
+    dependsOn javadocJar
+    from sourceSets.main.output
+    //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
+    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
+    else classifier = "deobf"
+    include javadoc.destinationDir
+    //sets where the jars go to.
+    destinationDir = file 'output'
 }
 
 task sourcesJar(type: Jar) {
