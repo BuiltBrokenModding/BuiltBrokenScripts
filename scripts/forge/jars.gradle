@@ -12,7 +12,7 @@ task deobfJar(type: Jar) {
     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
     else classifier = "deobf"
-    include "build/docs/javadoc/**"
+    from javadoc.destinationDir
     //sets where the jars go to.
     destinationDir = file 'output'
 }
