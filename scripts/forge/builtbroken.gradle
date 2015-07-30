@@ -41,7 +41,7 @@ apply plugin: 'forge'
 
 minecraft{
     //uses Forge.Properties arguments as a minecraft and a forge version
-    version = $config.version.minecraft-$config.version.forge
+    version = "$version.minecraft-$version.forge"
     runDir = "run"
 }
 
