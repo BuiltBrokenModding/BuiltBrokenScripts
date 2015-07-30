@@ -26,7 +26,7 @@ buildscript {
 //    dest ./
 //}
 
-ext.configFile = file "https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/DmodTest/Forge.properties"
+println new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/DmodTest/Forge.properties").text
 
 configFile.withReader {
     def prop = new Properties()
