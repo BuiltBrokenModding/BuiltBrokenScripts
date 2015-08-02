@@ -45,11 +45,6 @@ minecraft{
     runDir = "run"
 }
 
-//Prints the dependencies that the project was built with to the console
-task printDeps {
-doLast { println configurations.compile.collect { it.getName() }  }
-}
-
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
     doLast {
