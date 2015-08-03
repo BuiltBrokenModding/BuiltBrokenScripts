@@ -19,9 +19,9 @@ repositories {
         url="http://ci.builtbroken.com/maven/"
     }
     maven {
-			name "xcompwiz"
-			url "http://maven.xcompwiz.com"
-		}
+        name "xcompwiz"
+        url "http://maven.xcompwiz.com"
+    }
 }
 
 dependencies 
