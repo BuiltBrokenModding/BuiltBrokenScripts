@@ -19,7 +19,8 @@ publishing {
                 extension "xml"
             }
         }
-        myPublication(MavenPublication) {
+    myPublication(MavenPublication) {
+      from components.java outside pom.withXml { }
       pom.withXml {
         from components.java
         asNode().appendNode('description', 'Created on ' + getDate())
