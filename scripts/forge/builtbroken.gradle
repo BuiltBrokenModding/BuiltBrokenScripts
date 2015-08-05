@@ -40,7 +40,6 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft{
-    //uses Forge.Properties arguments as a minecraft and a forge version
     version = "1.7.10-10.13.3.1403-1.7.10"
     runDir = "run"
 }
