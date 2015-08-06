@@ -1,3 +1,8 @@
+if (!project.hasProperty("bambooshortPlanName"))
+    ext.bambooshortPlanName = ""
+
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
+
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"

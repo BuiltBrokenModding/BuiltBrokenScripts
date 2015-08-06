@@ -13,26 +13,8 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        classpath 'de.undercouch:gradle-download-task:1.2'
     }
 }
-//apply plugin: 'de.undercouch.download'
-
-//import de.undercouch.gradle.tasks.download.Download
-
-//task ("DownloadFP", type: Download)
-//{
-//    src "https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/Forge.properties"
-//    dest ./
-//}
-
-println new URL("https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/DmodTest/Forge.properties").text
-
-//configFile.withReader {
-//    def prop = new Properties()
-//    prop.load(it)
-//    ext.config = new ConfigSlurper().parse prop
-//}
 
 //Applies the scala plugin
 apply plugin: 'scala'
@@ -40,14 +22,8 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft{
-    //uses Forge.Properties arguments as a minecraft and a forge version
-    version = "$project.version.minecraft-$project.version.forge"
+    version = "1.7.10-10.13.3.1403-1.7.10"
     runDir = "run"
-}
-
-//Prints the dependencies that the project was built with to the console
-task printDeps {
-doLast { println configurations.compile.collect { it.getName() }  }
 }
 
 task printDependencies {

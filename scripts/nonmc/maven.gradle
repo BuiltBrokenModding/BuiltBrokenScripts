@@ -9,22 +9,20 @@ publishing {
                 classifier "build"
                 extension "properties"
             }
-            artifact ("CompiledWith.txt") {
-                classifier "CompiledWith"
-                extension "txt"
-            }
             if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
                 extension "xml"
             }
         }
-myPublication(MavenPublication) {
-    from components.java
-    pom.withXml {
+        myPublication(MavenPublication) {
+      pom.withXml {
+        from components.java
         asNode().appendNode('description', 'Created on ' + getDate())
+        def deps = configurations.compile.allDependencies
+        def dep_node = asNode().appendNode('dependencies')
+      }
     }
-}
   }
 
     repositories {
