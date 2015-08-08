@@ -19,13 +19,13 @@ publishing {
                 extension "xml"
             }
         }
-myPublication(MavenPublication) {
-    from components.java
-    pom.withXml {
-        asNode().appendNode('description', 'Created on ' + getDate())
-    }
+        myPublication(MavenPublication) {
+            from components.java
+            pom.withXml {
+                asNode().appendNode('description', 'Created on ' + getDate())
+            }
+        }
 }
-  }
 
     repositories {
         maven {
