@@ -21,6 +21,14 @@ apply plugin: 'scala'
 //applies the forge plugin
 apply plugin: 'forge'
 
+ext.buildProps = file "build.properties"
+
+buildProps.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    ext.config = new ConfigSlurper().parse prop
+}
+
 minecraft {
     version = "1.7.10-10.13.3.1401-1710ls"
     runDir = "run"
