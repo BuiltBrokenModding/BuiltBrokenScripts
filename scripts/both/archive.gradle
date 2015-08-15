@@ -1,0 +1,7 @@
+if (project.getProperty("bambooshortPlanName") == "BBM-Dev") {
+    group = "dev.builtbroken.voltzengine"
+    archivesBaseName = "${archivebase}"
+} else {
+    group = "com.builtbroken.voltzengine"
+    archivesBaseName = "${archivebase}"
+}
