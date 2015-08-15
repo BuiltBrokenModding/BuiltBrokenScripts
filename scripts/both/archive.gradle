@@ -1,7 +1,7 @@
 if (project.getProperty("bambooshortPlanName") == "BBM-Dev") {
-    group = "dev.builtbroken.${groupid}"
+    group = "dev.${org}.${groupid}"
     archivesBaseName = "${archivebase}"
 } else {
-    group = "com.builtbroken.${groupid}"
+    group = "com.${org}.${groupid}"
     archivesBaseName = "${archivebase}"
 }
