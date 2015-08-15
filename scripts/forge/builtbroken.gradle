@@ -46,3 +46,9 @@ task printDependencies {
      mustRunAfter "setupCIWorkspace"
 }
 tasks.build.dependsOn printDependencies
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmmss')
+    return formattedDate
+}
