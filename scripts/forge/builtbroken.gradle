@@ -24,6 +24,16 @@ apply plugin: 'forge'
 minecraft {
     version = "1.7.10-10.13.3.1401-1710ls"
     runDir = "run"
+    replace "@MAJOR@", version_major
+	replace "@MINOR@", version_minor
+	replace "@REVIS@", version_revis
+	
+	if (project.hasProperty("bambooBuildNumber")) {
+		replace "@BUILD@", project.bambooBuildNumber
+	}
+	else {
+		replace "@BUILD@", getDate()
+	}
 }
 
 task printDependencies {
