@@ -22,7 +22,7 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft {
-    version = "1.7.10-10.13.3.1401-1710ls"
+    version = "1.6.4-9.11.1.964"
     runDir = "run"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
