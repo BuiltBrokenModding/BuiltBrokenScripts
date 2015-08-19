@@ -1,0 +1,47 @@
+def curseRelationsVE = {
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
+    
+}
+
+def curseRelations = {
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
+    requiredLibrary 'voltz-engine'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
+    
+}
+
+curseforge {
+  if (project.hasProperty('dmodCurse')){
+  apiKey = project.dmodcurse}
+  project {
+  // VoltzEngine
+    id = "227048"
+    relations curseRelationsVE
+    changelog = ""
+    releaseType = "alpha"
+    addGameVersion "1.7.10"
+    mainArtifact(jar) {
+      displayName = "VoltzEngine version: $project.version"
+    }
+  }
+  project {
+  //ICBM
+    id = '225502'
+    relations curseRelations
+    changelog = ""
+    releaseType = "alpha"
+    addGameVersion "1.7.10"
+    mainArtifact(jar) {
+      displayName = "ICBM version: $project.version"
+    }
+  }
+}

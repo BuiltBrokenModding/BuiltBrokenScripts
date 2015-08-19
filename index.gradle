@@ -1,6 +1,6 @@
 //This is all the build scripts we use in the submodule
-apply from: './BuiltBrokenScripts/scripts/builtbroken.gradle'
-apply from: './BuiltBrokenScripts/scripts/maven.gradle'
-apply from: './BuiltBrokenScripts/scripts/jars.gradle'
-apply from: './BuiltBrokenScripts/scripts/clean.gradle'
-apply from: './BuiltBrokenScripts/scripts/changelog.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/builtbroken.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/index-both.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/newCurse.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/maven.gradle'
+//apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/deps.gradle'

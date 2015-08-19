@@ -1,6 +1,6 @@
 //nukes the output dir
 task makePretty(type: Delete) {
-  delete 'output'
+   delete 'output'
 }
 
 //makes clean nuke the output dir.

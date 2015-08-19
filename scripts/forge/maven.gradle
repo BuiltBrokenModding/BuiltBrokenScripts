@@ -20,14 +20,12 @@ publishing {
             }
         }
         myPublication(MavenPublication) {
-      pom.withXml {
-        from components.java
-        asNode().appendNode('description', 'Created on ' + getDate())
-        def deps = configurations.compile.allDependencies
-        def dep_node = asNode().appendNode('dependencies')
-      }
-    }
-  }
+            //from components.java
+            pom.withXml {
+                asNode().appendNode('description', 'Created on ' + getDate())
+            }
+        }
+}
 
     repositories {
         maven {

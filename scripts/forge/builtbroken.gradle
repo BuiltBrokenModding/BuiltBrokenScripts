@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+    }
+}
+
+//Applies the scala plugin
+apply plugin: 'scala'
+//applies the forge plugin
+apply plugin: 'forge'
+
+minecraft {
+    version = "1.7.10-10.13.3.1401-1710ls"
+    runDir = "run"
+    replace "@MAJOR@", version_major
+    replace "@MINOR@", version_minor
+    replace "@REVIS@", version_revis
+	
+    if (project.hasProperty("bambooBuildNumber")) {
+        replace "@BUILD@", project.bambooBuildNumber
+    }
+    else {
+        replace "@BUILD@", getDate()
+    }
+}
+
+
+
+task printDependencies {
+    //dumpes what the project was compiled with into a text file.
+    doLast {
+         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
+     }
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupDevWorkspace"
+     mustRunAfter "setupCIWorkspace"
+}
+tasks.build.dependsOn printDependencies
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmmss')
+    return formattedDate
+}

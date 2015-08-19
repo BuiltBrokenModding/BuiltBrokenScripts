@@ -3,7 +3,7 @@
  */
 task("createChangelog").doLast {
     //defines the bambo url
-    def bambooURL = "http://ci.builtbroken.com:8085/"
+    def bambooURL = "http://ci.dmodoomsirius.me:8085/"
 
     /**
      * Create a new file

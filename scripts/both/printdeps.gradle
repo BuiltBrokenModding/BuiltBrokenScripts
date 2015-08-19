@@ -1,0 +1,4 @@
+//Prints the dependencies that the project was built with to the console
+task printDeps {
+doLast { println configurations.compile.collect { it.getName() }  }
+}
