@@ -1,4 +1,7 @@
-version = "${project.minecraft.version}-${version_major}.${version_minor}.${version_revis}b"
+if (project.hasProperty("minecraft.version")
+    version = "${project.minecraft.version}-${version_major}.${version_minor}.${version_revis}b"
+else 
+    version = "${version_major}.${version_minor}.${version_revis}b"
 
 // This is used to set the local version
 if (project.hasProperty("bambooBuildNumber"))
