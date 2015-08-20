@@ -1,4 +1,4 @@
-if (project.hasProperty("minecraft.version")
+if (project.hasProperty("minecraft.version"))
     version = "${project.minecraft.version}-${version_major}.${version_minor}.${version_revis}b"
 else 
     version = "${version_major}.${version_minor}.${version_revis}b"
