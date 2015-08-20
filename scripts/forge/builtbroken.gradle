@@ -22,7 +22,7 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft {
-    version = "11.8-11.14.3.1450"
+    version = "1.8-11.14.3.1450"
     runDir = "run"
     mappings = 'snapshot_20150819'
     replace "@MAJOR@", version_major
