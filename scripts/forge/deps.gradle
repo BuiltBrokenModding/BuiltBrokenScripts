@@ -1,29 +1,3 @@
-repositories {
-    maven {
-        name "Mobius Repo"
-        url "http://mobiusstrip.eu/maven"
-    }
-    maven {
-        name 'CB Repo'
-        url "http://chickenbones.net/maven/"
-    }
-    maven { 
-        name 'OC Maven'
-        url = "http://maven.cil.li/" }
-    maven {
-        name = "ic2"
-        url = "http://maven.ic2.player.to/"
-    }
-    maven{
-        name="bbm"
-        url="http://ci.dmodoomsirius.me/maven/"
-    }
-    maven {
-        name "xcompwiz"
-        url "http://maven.xcompwiz.com"
-    }
-}
-
 dependencies 
 {
     compile 'junit:junit:4.11'
