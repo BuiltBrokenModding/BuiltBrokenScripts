@@ -44,4 +44,15 @@ curseforge {
       displayName = "ICBM version: $project.version"
     }
   }
+  project {
+  //NotEnoughKeys
+    id = '224614'
+    //relations curseRelations
+    changelog = ""
+    releaseType = "beta"
+    addGameVersion "1.7.10"
+    mainArtifact(jar) {
+      displayName = "NEK version: $project.version"
+    }
+  }
 }
