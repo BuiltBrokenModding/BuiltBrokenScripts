@@ -20,7 +20,7 @@ def curseRelations = {
 }
 
 curseforge {
-  if (project.hasProperty('dmodCurse')){
+  if (project.hasProperty('dmodcurse')){
   apiKey = project.dmodcurse}
   project {
   // VoltzEngine
