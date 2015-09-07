@@ -5,7 +5,6 @@ def curseRelationsVE = {
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
-    
 }
 
 def curseRelations = {
@@ -16,12 +15,15 @@ def curseRelations = {
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
-    
 }
 
 curseforge {
-  if (project.hasProperty('dmodcurse')){
-  apiKey = project.dmodcurse}
+  if (project.hasProperty("dmodcurse")) {
+        apiKey = project.dmodcurse
+    }
+    else {
+    apiKey = ""
+    }
   project {
   // VoltzEngine
     id = "227048"
