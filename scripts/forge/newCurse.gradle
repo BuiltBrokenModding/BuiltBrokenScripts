@@ -51,7 +51,7 @@ curseforge {
     id = '224614'
     //relations curseRelations
     changelog = ""
-    releaseType = "beta"
+    releaseType = "release"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "NEK version: $project.version"
