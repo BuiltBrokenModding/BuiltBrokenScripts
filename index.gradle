@@ -1,7 +1,7 @@
 //This is all the build scripts we use in the submodule
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/scripts/forge/builtbroken.gradle'
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/index-both.gradle'
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/scripts/forge/newCurse.gradle'
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/scripts/forge/maven.gradle'
-//apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/scripts/forge/deps.gradle'
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8/scripts/forge/version.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/builtbroken.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/index-both.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/newCurse.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/maven.gradle'
+//apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/deps.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/version.gradle'
