@@ -4,7 +4,7 @@ if (!project.hasProperty("bambooshortPlanName"))
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
 
 javadoc {
-    source = projectDir.path + "/build/sources"
+    source = projectDir.path + "/build/sources/main/scala""
 }
 
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
