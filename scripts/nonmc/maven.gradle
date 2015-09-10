@@ -5,8 +5,8 @@ publishing {
         {
             artifact jar
             artifact deobfJar
-            artifact("output/build.properties") {
-                classifier "build"
+            artifact("output/gradle.properties") {
+                classifier "gradle"
                 extension "properties"
             }
             if (project.hasProperty("bambooBuildNumber"))
