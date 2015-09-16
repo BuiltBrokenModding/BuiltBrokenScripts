@@ -7,5 +7,5 @@ dependencies
     compile "com.builtbroken.minecraftjunit:MinecraftJUnit:1.7.10-0.+:deobf"
     testRuntime 'org.slf4j:slf4j-simple:1.7.10'
     //compile "net.industrial-craft:industrialcraft-2:2.2.654-experimental:api"
-    compile "com.xcompwiz.mystcraft:mystcraft:0.12.3.00:api"
+    //compile "com.xcompwiz.mystcraft:mystcraft:0.12.3.00:api"
 }
