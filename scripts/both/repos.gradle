@@ -10,17 +10,46 @@ repositories {
     }
     maven { 
         name 'OC Maven'
-        url = "http://maven.cil.li/" }
-    maven {
-        name = "ic2"
-        url = "http://maven.ic2.player.to/"
+        url = "http://maven.cil.li/" 
     }
-    maven{
+    maven {
         name="bbm"
         url="http://api.dmodoomsirius.me/"
     }
     maven {
         name "xcompwiz"
         url "http://maven.xcompwiz.com"
+    }
+    maven {
+        name = "BluePower"
+        url = "http://maven.bluepowermod.com/"
+    }
+    maven {
+        name = "ic2, forestry"
+        url = "http://maven.ic2.player.to/"
+    }
+    maven {
+        name = "IGW"
+        url = "http://maven.k-4u.nl/"
+    }
+    maven {
+        name = "ue"
+        url = "http://calclavia.com/maven/"
+    }
+    maven {
+        name "FireBall API Depot"
+        url "http://dl.tsr.me/artifactory/libs-release-local"
+    }
+    maven {
+        name 'DVS1 Maven FS'
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'ProjectRed'
+        url 'http://files.projectredwiki.com/maven/'
+    }
+    maven {
+        name 'ColoredLightCore'
+        url "http://coloredlightscore.us.to/maven/clc/"
     }
 }
