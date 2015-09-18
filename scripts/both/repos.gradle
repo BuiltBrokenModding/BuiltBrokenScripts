@@ -33,14 +33,6 @@ repositories {
         url = "http://maven.k-4u.nl/"
     }
     maven {
-        name = "ue"
-        url = "http://calclavia.com/maven/"
-    }
-    maven {
-        name "FireBall API Depot"
-        url "http://dl.tsr.me/artifactory/libs-release-local"
-    }
-    maven {
         name 'DVS1 Maven FS'
         url 'http://dvs1.progwml6.com/files/maven'
     }
