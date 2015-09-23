@@ -1,20 +1,16 @@
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
     }
 }
+apply plugin: 'net.minecraftforge.gradle.forge'
 
 //Applies the scala plugin
 apply plugin: 'scala'
@@ -22,9 +18,9 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft {
-    version = "1.8-11.14.3.1450"
-
+    version = "1.8-11.14.3.1515"
     runDir = "run"
+    mappings = "snapshot_20141130"
     mappings = 'snapshot_20150819'
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
