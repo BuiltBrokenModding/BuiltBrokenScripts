@@ -52,8 +52,8 @@ def currentJvm = org.gradle.internal.jvm.Jvm.current()
 jar {
      dependsOn copyBuildXml, printDeps
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
-     //else classifier = ""
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
+     //else classifier = "universal"
      //sets where the jars go to.
      destinationDir = file 'output'
 }
