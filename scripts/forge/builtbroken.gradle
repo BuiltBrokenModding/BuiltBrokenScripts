@@ -10,12 +10,12 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
     }
 }
-apply plugin: 'net.minecraftforge.gradle.forge'
+
 
 //Applies the scala plugin
 apply plugin: 'scala'
 //applies the forge plugin
-apply plugin: 'forge'
+apply plugin: 'net.minecraftforge.gradle.forge'
 
 minecraft {
     version = "1.8-11.14.3.1515"
