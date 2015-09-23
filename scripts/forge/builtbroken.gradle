@@ -34,7 +34,7 @@ minecraft {
     }
 }
 
-println "Current Minecraft version = " + minecraft.apiVersion
+//println "Current Minecraft version = " + minecraft.forgeVersion
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 println "Current Java version = " + currentJvm
