@@ -5,7 +5,6 @@ def curseRelationsVE = {
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
-    
 }
 
 def curseRelations = {
@@ -16,12 +15,15 @@ def curseRelations = {
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
-    
 }
 
 curseforge {
-  if (project.hasProperty('dmodCurse')){
-  apiKey = project.dmodcurse}
+  if (project.hasProperty("dmodcurse")) {
+        apiKey = project.dmodcurse
+    }
+    else {
+    apiKey = ""
+    }
   project {
   // VoltzEngine
     id = "227048"
@@ -49,7 +51,7 @@ curseforge {
     id = '224614'
     //relations curseRelations
     changelog = ""
-    releaseType = "beta"
+    releaseType = "release"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "NEK version: $project.version"

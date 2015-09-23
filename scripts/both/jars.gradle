@@ -3,6 +3,10 @@ if (!project.hasProperty("bambooshortPlanName"))
 
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
 
+javadoc {
+    source = projectDir.path + "/build/sources/main/scala"
+}
+
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
@@ -32,7 +36,7 @@ task sourcesJar(type: Jar) {
 
 //copies the build.properties to the output dir for maven publishing.
 task copyBuildXml(type: Copy) {
-     from 'build.properties'
+     from 'gradle.properties'
      into 'output'
 }
 

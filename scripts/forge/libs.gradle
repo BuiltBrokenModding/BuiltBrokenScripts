@@ -1,0 +1,34 @@
+dependencies {
+        classpath 'de.undercouch:gradle-download-task:1.2'
+    }
+apply plugin: 'de.undercouch.download'
+
+import de.undercouch.gradle.tasks.download.Download
+
+task getLibraries {
+    def libsFolder = new File('libs')
+    if (!libsFolder.isDirectory() ) {
+        libsFolder.mkdirs()
+    }
+
+	def ccSource = 'http://minecraft.curseforge.com/mc-mods/67504-computercraft/files/2244605/download'
+	def ccDest = new File('libs', 'ComputerCraft1.74.jar')
+
+
+	if(!ccDest.exists() ){
+		download {
+			src ccSource
+			dest ccDest
+		}
+	}
+
+    def mtSource = 'http://minetweaker3.powerofbytes.com/download/MineTweaker3-Dev-Full-1.8-3.0.10.jar'
+    def mtDest = new File('libs', 'MineTweaker3-1.7.10-3.0.10.jar')
+
+    if(!mtDest.exists() ){
+        download {
+            src mtSource
+            dest mtDest
+        }
+    }
+}
