@@ -40,12 +40,12 @@ task copyBuildXml(type: Copy) {
      into 'output'
 }
 
-task apiZip(type: Zip) {
-     classifier = 'api'
-     from sourceSets*.allSource
-     include 'com/builtroken/mc/api/**'
-     destinationDir = file 'output'
-}
+//task apiZip(type: Zip) {
+//     classifier = 'api'
+//     from sourceSets*.allSource
+//     include 'com/builtroken/mc/api/**'
+//     destinationDir = file 'output'
+//}
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 
