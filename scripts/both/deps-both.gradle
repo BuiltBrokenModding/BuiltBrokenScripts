@@ -1,7 +1,17 @@
-apply from: 'provided.gradle'
 repositories {
 	mavenCentral()
 }
+
+configurations {
+   provided
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided 
+    }
+}
+
 dependencies {
     provided group: 'org.projectlombok', name: 'lombok', version:'1.12.6'
 }
