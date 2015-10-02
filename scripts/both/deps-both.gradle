@@ -1,6 +1,7 @@
+apply from: 'provided.gradle'
 repositories {
 	mavenCentral()
 }
 dependencies {
-    compile 'org.projectlombok:lombok:1.12.6'
+    provided group: 'org.projectlombok', name: 'lombok', version:'1.12.6'
 }
