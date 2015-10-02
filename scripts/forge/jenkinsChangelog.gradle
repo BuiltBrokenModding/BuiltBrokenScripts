@@ -1,0 +1,23 @@
+import net.minecraftforge.gradle.tasks.dev.ChangelogTask
+import net.minecraftforge.gradle.common.Constants
+import net.minecraftforge.gradle.delayed.*
+ 
+task createChangelogJenkins(type: ChangelogTask) {
+    def jobName = "${System.getenv().JOB_NAME}";
+    def buildNumber = "1";
+	
+	if (jobName?.trim())
+	{
+		jobName = "Mad Science";
+	}
+	
+	if (System.getenv("BUILD_NUMBER") != null) {
+		buildNumber = "${System.getenv("BUILD_NUMBER")}";
+		setServerRoot(new DelayedString(project, 'http://madsciencemod.com:8080/'));
+		setJobName(new DelayedString(project, jobName.replaceAll("\\s+","%20").toString()));
+		setAuthName(new DelayedString(project, 'MadScienceMod'));
+		setAuthPassword(new DelayedString(project, 'Xp8k8BkF9UjVsR75A58c82RK'));
+		setTargetBuild({buildNumber.toString()});
+		setOutput(new DelayedFile(project, 'output/' + 'changelog' + '.txt'));
+	}
+}
