@@ -40,20 +40,20 @@ task copyBuildXml(type: Copy) {
      into 'output'
 }
 
-task apiZip(type: Zip) {
-     classifier = 'api'
-     from sourceSets*.allSource
-     include 'com/builtroken/mc/api/**'
-     destinationDir = file 'output'
-}
+//task apiZip(type: Zip) {
+//     classifier = 'api'
+//     from sourceSets*.allSource
+//     include 'com/builtroken/mc/api/**'
+//     destinationDir = file 'output'
+//}
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 
 jar {
      dependsOn copyBuildXml, printDeps
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev"
-     //else classifier = ""
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
+     else classifier = "universal"
      //sets where the jars go to.
      destinationDir = file 'output'
 }

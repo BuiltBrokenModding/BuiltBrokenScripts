@@ -29,7 +29,7 @@ curseforge {
     id = "227048"
     relations curseRelationsVE
     changelog = ""
-    releaseType = "alpha"
+    releaseType = "beta"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "VoltzEngine version: $project.version"
@@ -40,7 +40,7 @@ curseforge {
     id = '225502'
     relations curseRelations
     changelog = ""
-    releaseType = "alpha"
+    releaseType = "beta"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "ICBM version: $project.version"
