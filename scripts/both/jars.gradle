@@ -57,6 +57,6 @@ jar {
             "Built-By": System.getProperty('user.name'),
             "Created-By": currentJvm,
             "Implementation-Title": archivesBaseName,
-            "Implementation-Version": project.version,
+            "Implementation-Version": project.version
      )
 }
