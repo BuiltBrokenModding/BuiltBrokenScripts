@@ -7,6 +7,9 @@ javadoc {
     source = projectDir.path + "/build/sources/main/scala"
 }
 
+javadoc.dependsOn(sourceMainJava)
+javadoc.dependsOn(sourceMainScala)
+
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
@@ -16,7 +19,7 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
 }
 
 task deobfJar(type: Jar) {
-    dependsOn javadocJar
+    dependsOn javadoc
     from sourceSets.main.output
     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
@@ -40,14 +43,8 @@ task copyBuildXml(type: Copy) {
      into 'output'
 }
 
-//task apiZip(type: Zip) {
-//     classifier = 'api'
-//     from sourceSets*.allSource
-//     include 'com/builtroken/mc/api/**'
-//     destinationDir = file 'output'
-//}
-
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
+println "Current Java version = " + currentJvm
 
 jar {
      dependsOn copyBuildXml, printDeps
@@ -56,4 +53,10 @@ jar {
      else classifier = "universal"
      //sets where the jars go to.
      destinationDir = file 'output'
+     manifest.mainAttributes(
+            "Built-By": System.getProperty('user.name'),
+            "Created-By": currentJvm,
+            "Implementation-Title": archivesBaseName,
+            "Implementation-Version": project.version,
+     )
 }

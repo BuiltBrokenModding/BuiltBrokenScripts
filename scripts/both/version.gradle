@@ -1,13 +1,33 @@
-if (project.hasProperty("minecraft.version"))
-    version = "${project.minecraft.version}-${version_major}.${version_minor}.${version_revis}b"
+//Checks if a project has a property called minecraft.
+if (project.hasProperty("minecraft"))
+    {
+    version = "${project.minecraft.version}-${version_major}.${version_minor}.${version_revis}b" + getBuildNumber()
+    }
 else 
-    version = "${version_major}.${version_minor}.${version_revis}b"
+    (
+    version = "${version_major}.${version_minor}.${version_revis}b" + getBuildNumber()
+    )
+//Adds variable for getting build numbers       
+def getBuildNumber() {
+    if (System.getenv("BUILD_NUMBER") != null) 
+    {
+        return "${System.getenv("BUILD_NUMBER")}"
+    }
+    else if (project.hasProperty("bambooBuildNumber")) 
+    {
+        return project.bambooBuildNumber
+    }
+    else if (System.getenv("DRONE_BUILD_NUMBER") != null) 
+    {
+        return "${System.getenv("DRONE_BUILD_NUMBER")}"
+    }
+    else if (System.getenv("TRAVIS_BUILD_NUMBER") != null) 
+    {
+        return "${System.getenv("TRAVIS_BUILD_NUMBER")}"
+    }
+    return getDate()
+}
 
-// This is used to set the local version
-if (project.hasProperty("bambooBuildNumber"))
-    version += project.bambooBuildNumber
-else
-    version += getDate()
 println "version = "+ version
 
 def getDate() {
@@ -15,3 +35,5 @@ def getDate() {
     def formattedDate = date.format('yyyyMMddHHmmss')
     return formattedDate
 }
+
+file("${archivebase}.txt").text = version;
