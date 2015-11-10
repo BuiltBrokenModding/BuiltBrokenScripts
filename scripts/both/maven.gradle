@@ -9,7 +9,7 @@ publishing {
                 classifier "gradle"
                 extension "properties"
             }
-			if (project.hasProperty("minecraft")
+			if (project.hasProperty("minecraft"))
             artifact ("CompiledWith.txt") {
                 classifier "CompiledWith"
                 extension "txt"
