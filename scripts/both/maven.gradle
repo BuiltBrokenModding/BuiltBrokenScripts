@@ -21,7 +21,7 @@ publishing {
             }
         }
         myPublication(MavenPublication) {
-            //from components.java
+            from components.java
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }
