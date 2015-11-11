@@ -19,8 +19,7 @@ publishing {
                 classifier "changelog"
                 extension "xml"
             }
-		 from components.java
-		}
+        }
         myPublication(MavenPublication) {
             //from components.java
             pom.withXml {
