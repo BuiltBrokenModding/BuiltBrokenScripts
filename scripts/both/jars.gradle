@@ -21,10 +21,6 @@ javadoc {
     source = sourceSets.main.allJava
 }
 
-scaladoc{
-    source = projectDir.path + "/build/sources/main/scala"
-}
-
 javadoc.dependsOn(sourceMainJava)
 javadoc.dependsOn(sourceMainScala)
 
