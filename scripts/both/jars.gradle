@@ -18,7 +18,11 @@ if (!project.hasProperty("bambooshortPlanName"))
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
 
 javadoc {
-    source = projectDir.path + "/build/sources/scala"
+    source = sourceSets.main.allJava
+}
+
+scaladoc{
+    source = projectDir.path + "/build/sources/main/scala"
 }
 
 javadoc.dependsOn(sourceMainJava)
@@ -80,6 +84,6 @@ jar {
             "Created-By": currentJvm,
             "Implementation-Title": archivesBaseName,
             "Implementation-Version": project.version,
-			"Git-Hash": gitHash,
+            "Git-Hash": gitHash,
      )
 }
