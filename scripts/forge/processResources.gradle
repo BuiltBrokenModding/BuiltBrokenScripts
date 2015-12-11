@@ -9,7 +9,7 @@ processResources {
 		include '**/*.info'
 		include '**/*.properties'
 
-		expand 'version': project.version, 'mcversion': project.minecraft.version
+		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modid': project.archivebase
 		// replace version and MCVersion
 	}
     
