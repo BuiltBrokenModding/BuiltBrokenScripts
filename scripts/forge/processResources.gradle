@@ -4,7 +4,7 @@ processResources {
     inputs.property "mcversion", project.minecraft.version
     inputs.property "modname", project.archivebase
     inputs.property "url", "http://builtbroken.com/"
-    inputs.property "des" project.description
+    inputs.property "des", project.description
 
     // replace stuff in mcmod.info, nothing else
 	from(sourceSets.main.resources.srcDirs) {
