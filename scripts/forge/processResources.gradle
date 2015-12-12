@@ -3,7 +3,7 @@ processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     inputs.property "modname", project.archivebase
-    inputs.processResources "modid", project.modid
+    inputs.processResources "modid", project.id
 
     // replace stuff in mcmod.info, nothing else
 	from(sourceSets.main.resources.srcDirs) {
@@ -11,7 +11,7 @@ processResources {
 		include '**/*.info'
 		include '**/*.properties'
 
-		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modname': project.archivebase, 'modid': project.modid
+		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modname': project.archivebase, 'modid': project.id
 		// replace version and MCVersion
 	}
     
