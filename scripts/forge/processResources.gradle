@@ -12,7 +12,7 @@ processResources {
 		include '**/*.info'
 		include '**/*.properties'
 
-		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modname': project.archivebase, 'url': "http://builtbroken.com/", 'des': property.moddes
+		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modname': project.archivebase, 'url': "http://builtbroken.com/", 'moddes': property.moddes
 	}
     
 	// copy everything else, thats not text
