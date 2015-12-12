@@ -4,15 +4,21 @@ processResources {
     inputs.property "mcversion", project.minecraft.version
     inputs.property "modname", project.archivebase
     inputs.property "url", "http://builtbroken.com/"
-    inputs.property "moddes", project.moddes
+    inputs.property "description", project.moddes
 
     // replace stuff in mcmod.info, nothing else
 	from(sourceSets.main.resources.srcDirs) {
 		//include '**/*.lang'
 		include '**/*.info'
 		include '**/*.properties'
-
-		expand 'version': project.version, 'mcversion': project.minecraft.version, 'modname': project.archivebase, 'url': "http://builtbroken.com/", 'moddes': property.moddes
+  
+        expand([
+                'version'    : project.version,
+                'mcversion'  : project.minecraft.version,
+                'description': project.description,
+                'url'        : "http://builtbroken.com/",
+                'modname'    : project.archivebase
+                ])
 	}
     
 	// copy everything else, thats not text
