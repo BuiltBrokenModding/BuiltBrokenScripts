@@ -5,6 +5,8 @@ publishing {
         {
             artifact jar
             artifact deobfJar
+            artifact javadocJar
+            artifact sourcesJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
                 extension "properties"
