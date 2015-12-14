@@ -1,26 +1,29 @@
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
 }
-
 
 //Applies the scala plugin
 apply plugin: 'scala'
 //applies the forge plugin
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'forge'
 
 minecraft {
-    version = "1.8-11.14.4.1563"
+    version = "1.7.10-10.13.3.1428-1.7.10"
     runDir = "run"
-    mappings = "snapshot_20141130"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
@@ -33,7 +36,7 @@ minecraft {
     }
 }
 
-println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
+println "Current Minecraft version = " + minecraft.apiVersion
 
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
