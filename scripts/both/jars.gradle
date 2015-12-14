@@ -30,17 +30,21 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
      else classifier = "javadoc"
      //sets where the jars go to.
      destinationDir = file 'output'
+     mustRunAfter "sourceMainScala"
+     mustRunAfter "sourceMainJava"
 }
 
 task deobfJar(type: Jar) {
-    dependsOn javadoc
-    from sourceSets.main.output
-    //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
-    if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
-    else classifier = "deobf"
-    from javadoc.destinationDir
-    //sets where the jars go to.
-    destinationDir = file 'output'
+     dependsOn javadoc
+     from sourceSets.main.output
+     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
+     else classifier = "deobf"
+     from javadoc.destinationDir
+     //sets where the jars go to.
+     destinationDir = file 'output'
+     mustRunAfter "sourceMainScala"
+     mustRunAfter "sourceMainJava"
 }
 
 task sourcesJar(type: Jar) {
@@ -49,6 +53,8 @@ task sourcesJar(type: Jar) {
      else classifier = "src"
      //sets where the jars go to.
      destinationDir = file 'output'
+     mustRunAfter "sourceMainScala"
+     mustRunAfter "sourceMainJava"
 }
 
 //copies the build.properties to the output dir for maven publishing.
@@ -82,4 +88,7 @@ jar {
             "Implementation-Version": project.version,
             "Git-Hash": gitHash,
      )
+     
 }
+
+tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
