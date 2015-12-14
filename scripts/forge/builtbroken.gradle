@@ -11,14 +11,13 @@ buildscript {
     }
 }
 
-
 //Applies the scala plugin
 apply plugin: 'scala'
 //applies the forge plugin
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 minecraft {
-    version = "1.8-11.14.3.1519"
+    version = "1.8-11.14.4.1563"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -40,7 +39,7 @@ minecraft {
     }
 }
 
-//println "Current Minecraft version = " + minecraft.forgeVersion
+//println "Current Minecraft version = " +minecraft.version + "-"+ minecraft.forgeVersion
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 println "Current Java version = " + currentJvm
