@@ -5,13 +5,10 @@ publishing {
         {
             artifact jar
             artifact deobfJar
-            artifact javadocJar
-            artifact sourcesJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
                 extension "properties"
             }
-			if (project.hasProperty("minecraft"))
             artifact ("CompiledWith.txt") {
                 classifier "CompiledWith"
                 extension "txt"
@@ -23,7 +20,7 @@ publishing {
             }
         }
         myPublication(MavenPublication) {
-            from components.java
+            //from components.java
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }

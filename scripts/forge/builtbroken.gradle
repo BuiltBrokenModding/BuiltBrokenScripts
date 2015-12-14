@@ -36,8 +36,6 @@ minecraft {
     }
 }
 
-println "Current Minecraft version = " + minecraft.apiVersion
-
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
     doLast {
