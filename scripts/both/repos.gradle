@@ -40,8 +40,8 @@ repositories {
         name 'ProjectRed'
         url 'http://files.projectredwiki.com/maven/'
     }
-    maven {
-        name 'ColoredLightCore'
-        url "http://coloredlightscore.us.to/maven/clc/"
-    }
+    //maven {
+    //    name 'ColoredLightCore'
+    //    url "http://coloredlightscore.us.to/maven/clc/"
+    //}
 }
