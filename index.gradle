@@ -3,5 +3,6 @@ apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScr
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/index-both.gradle'
 //apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/scripts/forge/deps.gradle'
 //apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/scripts/forge/version.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/scripts/forge/forgeV.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/scripts/forge/processResources.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/dmodtest/scripts/forge/newCurse.gradle'

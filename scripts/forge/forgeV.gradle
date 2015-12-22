@@ -1,0 +1,7 @@
+def forgeV = minecraft.apiVersion.split('-')[1]
+
+println forgeV
+
+minecraft {
+    replace "required-after:Forge", "required-after:Forge@[$forgeV,)"
+}
