@@ -21,14 +21,9 @@ apply plugin: 'scala'
 //applies the forge plugin
 apply plugin: 'forge'
 
-def forgeV = minecraft.apiVersion.split('-')[1]
-
-println forgeV
-
 minecraft {
     version = "1.7.10-10.13.3.1428-1.7.10"
     runDir = "run"
-    replace "required-after:Forge", "required-after:Forge@[$forgeV,)"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
