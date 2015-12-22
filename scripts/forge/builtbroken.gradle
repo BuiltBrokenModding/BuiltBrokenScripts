@@ -24,6 +24,7 @@ apply plugin: 'forge'
 minecraft {
     version = "1.7.10-10.13.3.1428-1.7.10"
     runDir = "run"
+    replace "required-after:Forge", "required-after:Forge@[$forgeV,)"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
@@ -37,6 +38,10 @@ minecraft {
 }
 
 println "Current Minecraft version = " + minecraft.apiVersion
+
+def forgeV = minecraft.apiVersion.split('-')[1]
+
+println forgeV
 
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
