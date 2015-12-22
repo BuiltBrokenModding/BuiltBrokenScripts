@@ -21,6 +21,10 @@ apply plugin: 'scala'
 //applies the forge plugin
 apply plugin: 'forge'
 
+def forgeV = minecraft.apiVersion.split('-')[1]
+
+println forgeV
+
 minecraft {
     version = "1.7.10-10.13.3.1428-1.7.10"
     runDir = "run"
@@ -39,9 +43,7 @@ minecraft {
 
 println "Current Minecraft version = " + minecraft.apiVersion
 
-def forgeV = minecraft.apiVersion.split('-')[1]
 
-println forgeV
 
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
