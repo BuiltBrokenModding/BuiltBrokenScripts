@@ -113,4 +113,6 @@ jar {
      
 }
 
+}
+
 tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
