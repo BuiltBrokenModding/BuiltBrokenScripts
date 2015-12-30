@@ -22,7 +22,40 @@ javadoc {
 }
 
 javadoc.dependsOn(sourceMainJava)
-javadoc.dependsOn(sourceMainScala)
+javadoc.dependsOn(sourceMainScala
+
+def gitHash = 'unknown'
+if (new File(projectDir, '.git').exists()) {
+    def repo = Grgit.open(project.file('.'))
+    gitHash = repo.log().find().abbreviatedId
+}
+if (project.hasProperty("at"))
+    {
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": project.version,
+               "Git-Hash": gitHash,
+               "FMLCorePlugin": at,
+                "FMLCorePluginContainsFMLMod": "true")
+    }
+    }
+else
+{
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": project.version,
+               "Git-Hash": gitHash)
+    }
+}
+"Built-By": System.getProperty('user.name'),
+            "Created-By": currentJvm,
+            "Implementation-Title": archivesBaseName,
+            "Implementation-Version": project.version,
+            "Git-Hash": gitHash,
 
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
@@ -43,6 +76,8 @@ task deobfJar(type: Jar) {
      from javadoc.destinationDir
      //sets where the jars go to.
      destinationDir = file 'output'
+     manifest = project.manifest {
+        from sharedManifest
      mustRunAfter "sourceMainScala"
      mustRunAfter "sourceMainJava"
 }
@@ -53,6 +88,8 @@ task sourcesJar(type: Jar) {
      else classifier = "src"
      //sets where the jars go to.
      destinationDir = file 'output'
+     manifest = project.manifest {
+        from sharedManifest
      mustRunAfter "sourceMainScala"
      mustRunAfter "sourceMainJava"
 }
@@ -68,11 +105,7 @@ println "Current Java version = " + currentJvm
 
 import org.ajoberstar.grgit.*
 
-def gitHash = 'unknown'
-if (new File(projectDir, '.git').exists()) {
-    def repo = Grgit.open(project.file('.'))
-    gitHash = repo.log().find().abbreviatedId
-}
+
 
 jar {
      dependsOn copyBuildXml, printDeps
@@ -81,13 +114,8 @@ jar {
      else classifier = "universal"
      //sets where the jars go to.
      destinationDir = file 'output'
-     manifest.mainAttributes(
-            "Built-By": System.getProperty('user.name'),
-            "Created-By": currentJvm,
-            "Implementation-Title": archivesBaseName,
-            "Implementation-Version": project.version,
-            "Git-Hash": gitHash,
-     )
+     manifest = project.manifest {
+        from sharedManifest
      
 }
 
