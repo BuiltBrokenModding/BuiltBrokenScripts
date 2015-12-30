@@ -79,8 +79,10 @@ task deobfJar(type: Jar) {
      destinationDir = file 'output'
      manifest = project.manifest {
         from sharedManifest
+    }
      mustRunAfter "sourceMainScala"
      mustRunAfter "sourceMainJava"
+  
 }
 
 task sourcesJar(type: Jar) {
@@ -91,6 +93,7 @@ task sourcesJar(type: Jar) {
      destinationDir = file 'output'
      manifest = project.manifest {
         from sharedManifest
+     }
      mustRunAfter "sourceMainScala"
      mustRunAfter "sourceMainJava"
 }
@@ -111,8 +114,7 @@ jar {
      manifest = project.manifest {
         from sharedManifest
      
-}
-
+     }
 }
 
 tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
