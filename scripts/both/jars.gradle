@@ -43,8 +43,8 @@ if (project.hasProperty("coremod"))
                "Implementation-Title": archivesBaseName,
                "Implementation-Version": project.version,
                "Git-Hash": gitHash,
-               "FMLCorePlugin": at,
-                "FMLCorePluginContainsFMLMod": "true")
+               "FMLCorePlugin": coremod,
+               "FMLCorePluginContainsFMLMod": "true")
     }
 }
 else
