@@ -22,13 +22,19 @@ javadoc {
 }
 
 javadoc.dependsOn(sourceMainJava)
-javadoc.dependsOn(sourceMainScala
+javadoc.dependsOn(sourceMainScala)
+
+def currentJvm = org.gradle.internal.jvm.Jvm.current()
+println "Current Java version = " + currentJvm
+
+import org.ajoberstar.grgit.*
 
 def gitHash = 'unknown'
 if (new File(projectDir, '.git').exists()) {
     def repo = Grgit.open(project.file('.'))
     gitHash = repo.log().find().abbreviatedId
 }
+
 if (project.hasProperty("coremod"))
     {
     ext.sharedManifest = manifest {
@@ -40,7 +46,7 @@ if (project.hasProperty("coremod"))
                "FMLCorePlugin": at,
                 "FMLCorePluginContainsFMLMod": "true")
     }
-    }
+}
 else
 {
     ext.sharedManifest = manifest {
@@ -99,13 +105,6 @@ task copyBuildXml(type: Copy) {
      from 'gradle.properties'
      into 'output'
 }
-
-def currentJvm = org.gradle.internal.jvm.Jvm.current()
-println "Current Java version = " + currentJvm
-
-import org.ajoberstar.grgit.*
-
-
 
 jar {
      dependsOn copyBuildXml, printDeps
