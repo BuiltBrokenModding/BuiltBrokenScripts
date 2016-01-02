@@ -25,6 +25,10 @@ def getBuildNumber() {
     {
         return "${System.getenv("TRAVIS_BUILD_NUMBER")}"
     }
+    else if (project.hasProperty("sbmBuild")
+    {
+        return project.sbmBuild
+    }
     return getDate()
 }
 
