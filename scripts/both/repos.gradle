@@ -37,10 +37,6 @@ repositories {
         url 'http://dvs1.progwml6.com/files/maven'
     }
     maven {
-        name 'ProjectRed'
-        url 'http://files.projectredwiki.com/maven/'
-    }
-    maven {
         name 'ColoredLightCore'
         url "http://coloredlightscore.us.to/maven/clc/"
     }
