@@ -18,8 +18,8 @@ def curseRelations = {
 }
 
 curseforge {
-  if (project.hasProperty("dmodcurse")) {
-        apiKey = project.dmodcurse
+  if (project.hasProperty("bbmcurse")) {
+        apiKey = project.bbmcurse
     }
     else {
     apiKey = ""
