@@ -36,18 +36,4 @@ repositories {
         name 'DVS1 Maven FS'
         url 'http://dvs1.progwml6.com/files/maven'
     }
-    maven {
-<<<<<<< HEAD
-        name 'ColoredLightCore'
-        url "http://coloredlightscore.us.to/maven/clc/"
-    }
-=======
-        name 'ProjectRed'
-        url 'http://files.projectredwiki.com/maven/'
-    }
-    //maven {
-    //    name 'ColoredLightCore'
-    //    url "http://coloredlightscore.us.to/maven/clc/"
-    //}
->>>>>>> origin/dmodtest
 }
