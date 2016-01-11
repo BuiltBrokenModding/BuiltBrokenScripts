@@ -7,6 +7,46 @@ javadoc {
     source = projectDir.path + "/build/sources/main/scala"
 }
 
+<<<<<<< HEAD
+=======
+javadoc.dependsOn(sourceMainJava)
+javadoc.dependsOn(sourceMainScala)
+
+def currentJvm = org.gradle.internal.jvm.Jvm.current()
+println "Current Java version = " + currentJvm
+
+import org.ajoberstar.grgit.*
+
+def gitHash = 'unknown'
+if (new File(projectDir, '.git').exists()) {
+    def repo = Grgit.open(project.file('.'))
+    gitHash = repo.log().find().abbreviatedId
+}
+
+if (project.hasProperty("coremod"))
+    {
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": project.version,
+               "Git-Hash": gitHash,
+               "FMLCorePlugin": coremod,
+               "FMLCorePluginContainsFMLMod": "true")
+    }
+}
+else
+{
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": project.version,
+               "Git-Hash": gitHash)
+    }
+}
+
+>>>>>>> origin/dmodtest
 task javadocJar(type: Jar, dependsOn: 'javadoc') {
      from javadoc.destinationDir
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
@@ -16,6 +56,7 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
 }
 
 task deobfJar(type: Jar) {
+<<<<<<< HEAD
     dependsOn javadocJar
     from sourceSets.main.output
     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
@@ -24,6 +65,22 @@ task deobfJar(type: Jar) {
     from javadoc.destinationDir
     //sets where the jars go to.
     destinationDir = file 'output'
+=======
+     dependsOn javadoc
+     from sourceSets.main.output
+     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
+     else classifier = "deobf"
+     //from javadoc.destinationDir
+     //sets where the jars go to.
+     destinationDir = file 'output'
+     manifest = project.manifest {
+        from sharedManifest
+    }
+     mustRunAfter "sourceMainScala"
+     mustRunAfter "sourceMainJava"
+  
+>>>>>>> origin/dmodtest
 }
 
 task sourcesJar(type: Jar) {
@@ -32,6 +89,14 @@ task sourcesJar(type: Jar) {
      else classifier = "src"
      //sets where the jars go to.
      destinationDir = file 'output'
+<<<<<<< HEAD
+=======
+     manifest = project.manifest {
+        from sharedManifest
+     }
+     mustRunAfter "sourceMainScala"
+     mustRunAfter "sourceMainJava"
+>>>>>>> origin/dmodtest
 }
 
 //copies the build.properties to the output dir for maven publishing.
@@ -40,6 +105,7 @@ task copyBuildXml(type: Copy) {
      into 'output'
 }
 
+<<<<<<< HEAD
 //task apiZip(type: Zip) {
 //     classifier = 'api'
 //     from sourceSets*.allSource
@@ -49,6 +115,8 @@ task copyBuildXml(type: Copy) {
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 
+=======
+>>>>>>> origin/dmodtest
 jar {
      dependsOn copyBuildXml, printDeps
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
@@ -56,4 +124,14 @@ jar {
      else classifier = "universal"
      //sets where the jars go to.
      destinationDir = file 'output'
+<<<<<<< HEAD
 }
+=======
+     manifest = project.manifest {
+        from sharedManifest
+     
+     }
+}
+
+tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
+>>>>>>> origin/dmodtest

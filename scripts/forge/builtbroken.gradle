@@ -27,14 +27,10 @@ minecraft {
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
-	
-    if (project.hasProperty("bambooBuildNumber")) {
-        replace "@BUILD@", project.bambooBuildNumber
-    }
-    else {
-        replace "@BUILD@", getDate()
-    }
+    replace "@BUILD@", project.getBuildNumber()
 }
+
+println "Current Minecraft version = " + minecraft.apiVersion
 
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
@@ -45,10 +41,5 @@ task printDependencies {
      mustRunAfter "setupDevWorkspace"
      mustRunAfter "setupCIWorkspace"
 }
-tasks.build.dependsOn printDependencies
 
-def getDate() {
-    def date = new Date()
-    def formattedDate = date.format('yyyyMMddHHmmss')
-    return formattedDate
-}
+tasks.build.dependsOn printDependencies
