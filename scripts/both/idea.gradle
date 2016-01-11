@@ -1,0 +1,7 @@
+apply plugin: 'idea'
+
+idea.module.iml {
+    whenMerged { module ->
+        module.dependencies*.exported = true
+    }
+}
