@@ -65,7 +65,7 @@ task javadocJar(type: Jar, dependsOn: 'javadoc') {
 }
 
 task deobfJar(type: Jar) {
-     dependsOn javadoc
+     //dependsOn javadoc
      from sourceSets.main.output
      //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
@@ -110,4 +110,4 @@ jar {
      }
 }
 
-tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
+tasks.build.dependsOn sourcesJar, deobfJar
