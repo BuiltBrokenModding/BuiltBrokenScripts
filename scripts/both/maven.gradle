@@ -34,7 +34,7 @@ publishing {
             if (project.hasProperty("local") && project.getProperty("local") == "true")
                 url "file:" + projectDir.path + "/build/maven"
             else
-                url "file:///usr/share/nginx/html/maven"
+                url "file:///home/services/dmod/maven"
         }
     }
 }
