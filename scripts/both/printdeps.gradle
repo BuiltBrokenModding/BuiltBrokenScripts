@@ -2,3 +2,15 @@
 task printDeps {
 doLast { println configurations.compile.collect { it.getName() }  }
 }
+
+task printDependencies {
+    //dumpes what the project was compiled with into a text file.
+    doLast {
+         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
+     }
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupDevWorkspace"
+     mustRunAfter "setupCIWorkspace"
+}
+
+tasks.build.dependsOn printDependencies, printDeps

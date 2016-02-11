@@ -22,24 +22,15 @@ apply plugin: 'scala'
 apply plugin: 'forge'
 
 minecraft {
-    version = "1.7.10-10.13.3.1428-1.7.10"
+    version = "1.8.9-11.15.1.1739"
     runDir = "run"
+    mappings = "stable_20"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
 }
 
-println "Current Minecraft version = " + minecraft.apiVersion
+println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
+println "current mappings are set to " + "$mappings_version"
 
-task printDependencies {
-    //dumpes what the project was compiled with into a text file.
-    doLast {
-         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
-     }
-     mustRunAfter "setupDecompWorkspace"
-     mustRunAfter "setupDevWorkspace"
-     mustRunAfter "setupCIWorkspace"
-}
-
-tasks.build.dependsOn printDependencies

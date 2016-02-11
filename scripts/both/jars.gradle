@@ -15,8 +15,6 @@ buildscript {
 if (!project.hasProperty("bambooshortPlanName"))
     ext.bambooshortPlanName = ""
 
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
-
 javadoc {
     source = sourceSets.main.allJava
 }
@@ -96,7 +94,7 @@ task copyBuildXml(type: Copy) {
 }
 
 jar {
-     dependsOn copyBuildXml, printDeps
+     dependsOn copyBuildXml
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
      if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
      else classifier = "universal"
