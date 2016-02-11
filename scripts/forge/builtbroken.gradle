@@ -24,7 +24,7 @@ apply plugin: 'forge'
 minecraft {
     version = "1.8.9-11.15.1.1739"
     runDir = "run"
-    mappings = "stable_20"
+    mappings = "snapshot_20160210"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
