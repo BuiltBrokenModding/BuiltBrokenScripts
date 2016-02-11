@@ -1,4 +1,4 @@
-def forgeV = minecraft.apiVersion.split('-')[1]
+def forgeV = minecraft.forgeVersion
 
 println forgeV
 
