@@ -20,6 +20,7 @@ publishing {
                 extension "xml"
             }
         }
+        //prints the current date to the pom file.
         myPublication(MavenPublication) {
             //from components.java
             pom.withXml {

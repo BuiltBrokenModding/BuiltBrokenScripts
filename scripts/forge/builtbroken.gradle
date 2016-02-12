@@ -30,8 +30,10 @@ minecraft {
     replace "@BUILD@", project.getBuildNumber()
 }
 
+//Prints the minecraft version to console.
 println "Current Minecraft version = " + minecraft.apiVersion
 
+//Prints your current dependencies to a file.
 task printDependencies {
     //dumpes what the project was compiled with into a text file.
     doLast {

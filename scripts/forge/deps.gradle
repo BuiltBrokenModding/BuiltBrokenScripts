@@ -1,13 +1,13 @@
 dependencies 
 {
     compile 'junit:junit:4.11'
-    compile "mcp.mobius.waila:Waila:1.5.11-RC1_1.7.10:dev"
+    //compile "mcp.mobius.waila:Waila:1.5.11-RC1_1.7.10:dev"
     compile "li.cil.oc:OpenComputers:MC1.7.10-1.4.0.+:dev"
     compile "mantle:Mantle:1.7.10-0.3.2.jenkins190:deobf"
     compile "tconstruct:TConstruct:1.7.10-1.8.7.build981:deobf"
     compile "com.builtbroken.codinglib:CodingLib:0.0.3b26:deobf"
     compile "com.builtbroken.minecraftjunit:MinecraftJUnit:1.7.10-0.+:deobf"
-    compile 'com.google.apis:google-api-services-analytics:v3-rev121-1.21.0'
+    //compile 'com.google.apis:google-api-services-analytics:v3-rev121-1.21.0'
     testRuntime 'org.slf4j:slf4j-simple:1.7.10'
     //compile "net.industrial-craft:industrialcraft-2:2.2.654-experimental:api"
     //compile "com.xcompwiz.mystcraft:mystcraft:0.12.3.00:api"

@@ -2,8 +2,6 @@
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/getbuildnumber.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/builtbroken.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/index/index-both.gradle'
-//apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/deps.gradle'
-//apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/version.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/forgeV.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/processResources.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/forge/newCurse.gradle'
