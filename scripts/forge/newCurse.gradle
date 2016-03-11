@@ -37,7 +37,6 @@ curseforge {
     addArtifact (deobfJarJar)
       displayName = "VoltzEngine deobf version: $project.version"
     }
-  }
   project {
   //ICBM
     id = '225502'
@@ -64,4 +63,4 @@ curseforge {
     addArtifact (deobfJarJar)
            displayName = "NEK version deobf: $project.version"
     }
-  }
+}
