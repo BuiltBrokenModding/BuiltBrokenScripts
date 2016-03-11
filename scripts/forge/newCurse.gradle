@@ -28,22 +28,28 @@ curseforge {
   // VoltzEngine
     id = "227048"
     relations curseRelationsVE
-    changelog = ""
+    changelog = file('changelog.txt')
     releaseType = "beta"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "VoltzEngine version: $project.version"
+    }
+    addArtifact (deobfJarJar)
+      displayName = "VoltzEngine deobf version: $project.version"
     }
   }
   project {
   //ICBM
     id = '225502'
     relations curseRelations
-    changelog = ""
+    changelog = file('changelog.txt')
     releaseType = "beta"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "ICBM version: $project.version"
+    }
+    addArtifact (deobfJarJar)
+      displayName = "ICBM deobf version: $project.version"
     }
   }
   project {
@@ -56,5 +62,7 @@ curseforge {
     mainArtifact(jar) {
       displayName = "NEK version: $project.version"
     }
+    addArtifact (deobfJarJar)
+           displayName = "NEK version deobf: $project.version"
+    }
   }
-}
