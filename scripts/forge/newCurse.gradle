@@ -50,7 +50,6 @@ curseforge {
     }
     addArtifact (deobfJarJar)
       displayName = "ICBM deobf version: $project.version"
-    }
   }
   project {
   //NotEnoughKeys
