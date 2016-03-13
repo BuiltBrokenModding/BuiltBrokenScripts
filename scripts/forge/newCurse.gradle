@@ -34,7 +34,7 @@ curseforge {
     mainArtifact(jar) {
       displayName = "VoltzEngine version: $project.version"
     }
-    addArtifact(deobfJarJar)
+    addArtifact(deobfJar)
       displayName = "VoltzEngine deobf version: $project.version"
     }
   project {
@@ -47,7 +47,7 @@ curseforge {
     mainArtifact(jar) {
       displayName = "ICBM version: $project.version"
     }
-    addArtifact(deobfJarJar)
+    addArtifact(deobfJar)
       displayName = "ICBM deobf version: $project.version"
   }
   project {
