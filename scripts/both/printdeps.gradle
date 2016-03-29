@@ -9,8 +9,8 @@ task printDependencies {
          file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
      }
      mustRunAfter "setupDecompWorkspace"
-     mustRunAfter "setupDevWorkspace"
-     mustRunAfter "setupCIWorkspace"
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupCiWorkspace"
 }
 
 tasks.build.dependsOn printDependencies, printDeps
