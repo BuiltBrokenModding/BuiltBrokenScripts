@@ -5,3 +5,4 @@ apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScr
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.9/scripts/both/archive.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.9/scripts/both/repos.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.9/scripts/both/maven.gradle'
+apply from 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.9/scripts/both/printdeps.gradle'
