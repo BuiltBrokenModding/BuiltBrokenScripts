@@ -1,39 +1,8 @@
 repositories {
+    mavenCentral()
     jcenter()
     maven {
-        name "Mobius Repo"
-        url "http://mobiusstrip.eu/maven"
-    }
-    maven {
-        name 'CB Repo'
-        url "http://chickenbones.net/maven/"
-    }
-    maven { 
-        name 'OC Maven'
-        url = "http://maven.cil.li/" 
-    }
-    maven {
-        name="bbm"
-        url="http://api.dmodoomsirius.me/"
-    }
-    maven {
-        name "xcompwiz"
-        url "http://maven.xcompwiz.com"
-    }
-    maven {
-        name = "BluePower"
-        url = "http://maven.bluepowermod.com/"
-    }
-    maven {
-        name = "ic2, forestry"
-        url = "http://maven.ic2.player.to/"
-    }
-    maven {
-        name = "IGW"
-        url = "http://maven.k-4u.nl/"
-    }
-    maven {
-        name 'DVS1 Maven FS'
-        url 'http://dvs1.progwml6.com/files/maven'
+        name "dsiriusArt"
+        url "http://box1.dmodoomsirius.me:8081/artifactory/libs-release/"
     }
 }
