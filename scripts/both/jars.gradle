@@ -112,4 +112,4 @@ jar {
      }
 }
 
-tasks.build.dependsOn sourcesJar, deobfJar
+tasks.build.dependsOn deobfJar
