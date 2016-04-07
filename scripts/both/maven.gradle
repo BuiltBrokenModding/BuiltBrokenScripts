@@ -19,11 +19,11 @@ publishing {
                 classifier "changelog"
                 extension "xml"
             }
-            from components.java
+            //from components.java
         }
         //prints the current date to the pom file.
         myPublication(MavenPublication) {
-            //from components.java
+            from components.java
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }
