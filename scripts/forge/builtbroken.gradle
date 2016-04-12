@@ -17,7 +17,7 @@ apply plugin: 'scala'
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 minecraft {
-    version = "1.8.9-11.15.1.1739"
+    version = "1.8.9-11.15.1.1855"
     runDir = "run"
     mappings = "snapshot_20160210"
     replace "@MAJOR@", version_major
