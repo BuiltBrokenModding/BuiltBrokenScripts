@@ -20,8 +20,11 @@ minecraft {
     version = "1.9.4-12.17.0.1940"
     runDir = "run"
     mappings = "snapshot_20160328"
+	if (project.hasProperty("version_major"))
     replace "@MAJOR@", version_major
+	if (project.hasProperty("version_minor"))
     replace "@MINOR@", version_minor
+	if (project.hasProperty("version_revis"))
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
     mappings = "snapshot_20160603"
