@@ -10,6 +10,6 @@ dependencies
     //compile 'com.google.apis:google-api-services-analytics:v3-rev121-1.21.0'
     testRuntime 'org.slf4j:slf4j-simple:1.7.10'
     
-    compile "net.industrial-craft:industrialcraft-2:2.2.817-experimental:dev"
+    compile "net.industrial-craft:industrialcraft-2:2.2.823-experimental:dev"
     //compile "com.xcompwiz.mystcraft:mystcraft:0.12.3.00:api"
 }
