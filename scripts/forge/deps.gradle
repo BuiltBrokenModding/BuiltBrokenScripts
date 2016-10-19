@@ -3,4 +3,6 @@ dependencies
     compile 'junit:junit:4.11'
     compile 'com.google.apis:google-api-services-analytics:v3-rev121-1.21.0'
     testRuntime 'org.slf4j:slf4j-simple:1.7.10'
+    deobfCompile "mezz.jei:jei_1.10.2:3.12.8.325:api"
+    runtime "mezz.jei:jei_$1.10.2:3.12.8.325"
 }
