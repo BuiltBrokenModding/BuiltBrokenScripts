@@ -19,7 +19,7 @@ buildscript {
 //Applies the scala plugin
 apply plugin: 'scala'
 //applies the forge plugin
-//apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'net.minecraftforge.gradle.forge'
 
 minecraft {
     version = "1.10.2-12.18.2.2107"
