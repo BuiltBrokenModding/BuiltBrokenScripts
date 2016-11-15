@@ -1,15 +1,7 @@
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
-        maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
+        maven { url = "http://files.minecraftforge.net/maven" }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
@@ -20,6 +12,7 @@ buildscript {
 apply plugin: 'scala'
 //applies the forge plugin
 apply plugin: 'net.minecraftforge.gradle.forge'
+
 
 minecraft {
     version = "1.10.2-12.18.2.2107"
