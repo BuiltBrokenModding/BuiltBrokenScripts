@@ -45,7 +45,7 @@ curseforge {
       displayName = "VoltzEngine ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
     addArtifact(deobfJar)
-      displayName = "VoltzEngine deobf ${{project.version}}-UNSTABLE build $${project.getBuildNumber}() for 1.7.10"
+      displayName = "VoltzEngine deobf ${project.version}}-UNSTABLE build $${project.getBuildNumber}() for 1.7.10"
   }
   project {
   //ICBM
