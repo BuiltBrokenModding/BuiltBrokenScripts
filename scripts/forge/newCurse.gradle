@@ -71,7 +71,7 @@ curseforge {
     mainArtifact(jar) {
       displayName = "NEK version: ${project.version}"
     }
-    addArtifact (deobfJar)
+    addArtifact (deobfJar){
            displayName = "NEK version deobf: ${project.version}"
   }
   project{
