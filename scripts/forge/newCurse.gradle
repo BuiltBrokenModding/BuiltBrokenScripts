@@ -358,7 +358,7 @@ curseforge{
   }
   project{
   //ICBM - Classic
-    id = '224319'
+    id = '244451'
     relations curseRelations
     releaseType = "alpha"
     addGameVersion "1.7.10"
