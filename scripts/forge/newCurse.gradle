@@ -27,7 +27,7 @@ def curseRelationsNV = {
     optionalLibrary 'opencomputers'
 }
 
-curseforge {
+curseforge{
   if (project.hasProperty("bbmcurse")) {
         apiKey = project.bbmcurse
     }
@@ -75,6 +75,7 @@ curseforge {
     addArtifact (deobfJar){
            displayName = "NEK version deobf: ${project.version}"
   }
+}
   project{
   //MiliraryBaseDecor
     id = '244730'
