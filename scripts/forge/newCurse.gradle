@@ -89,7 +89,6 @@ curseforge{
     addArtifact(deobfJar){
       displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE-Deobf build ${project.getBuildNumber}() for 1.7.10"
     }
-
   }
   project{
   //Basic Industry
@@ -331,7 +330,7 @@ curseforge{
   }
   project{
   //SBM Wooden Rails
-    id = '233511'
+    id = '233655'
     relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion "1.7.10"
