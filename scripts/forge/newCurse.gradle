@@ -39,6 +39,7 @@ curseforge{
     id = "227048"
     relations curseRelationsVE
     changelog = file('changelog.html')
+    changelogType = 'html'
     releaseType = "alpha"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
@@ -53,6 +54,7 @@ curseforge{
     id = '225502'
     relations curseRelations
     changelog = file('changelog.html')
+    changelogType = 'html'
     releaseType = "alpha"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
@@ -67,6 +69,7 @@ curseforge{
     id = '224614'
     //relations curseRelations
     changelog = file('changelog.html')
+    changelogType = 'html'
     releaseType = "release"
     addGameVersion "1.7.10"
     mainArtifact(jar) {
@@ -82,6 +85,7 @@ curseforge{
     relations curseRelations
     releaseType = "alpha"
     changelog = file('changelog.html')
+    changelogType = 'html'
     addGameVersion "1.7.10"
     mainArtifact(jar) {
       displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
@@ -279,6 +283,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "AddictedToRed ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -293,6 +298,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "AI Improvements ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -307,6 +313,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "Announcement-Mod ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -321,6 +328,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "ColoredChests ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -335,6 +343,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "WoodenRails ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -349,6 +358,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "Artillects ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -363,6 +373,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "ICBM - Classic ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
