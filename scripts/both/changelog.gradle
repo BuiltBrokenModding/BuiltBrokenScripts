@@ -1,4 +1,4 @@
-buildscript {
+/*buildscript {
   repositories {
     maven {
       url "https://plugins.gradle.org/m2/"
@@ -9,7 +9,7 @@ buildscript {
   }
 }
 
-apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"*/
 
 /**
  * Generates a Bamboo XML changelog via the REST API.
@@ -53,7 +53,7 @@ task("createChangelog").doLast {
     out.close()
 }
 
-task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+/*task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
     filePath = "changelog.html"
     untaggedName = "Current release ${project.version}"
     fromCommit = startGitRev
@@ -72,4 +72,4 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 """
 }
 
-tasks.build.dependsOn makeChangelog
+tasks.build.dependsOn makeChangelog*/
