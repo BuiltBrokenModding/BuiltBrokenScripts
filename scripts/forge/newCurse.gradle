@@ -101,6 +101,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "Basic Industry ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -115,6 +116,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "MFFS ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -129,6 +131,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -143,6 +146,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-BagablePlants ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -157,6 +161,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-CactiBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -171,6 +176,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "Assembly Line ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -185,6 +191,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -199,6 +206,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-WoodenShears ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -213,6 +221,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -227,6 +236,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -241,6 +251,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-BoneTorch ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -255,6 +266,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
@@ -269,6 +281,7 @@ curseforge{
     releaseType = "alpha"
     addGameVersion "1.7.10"
     changelog = file('changelog.html')
+    changelogType = 'html'
     mainArtifact(jar) {
       displayName = "SBM-RedCow ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
     }
