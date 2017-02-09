@@ -1,3 +1,16 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.40"
+  }
+}
+
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
+
 /**
  * Generates a Bamboo XML changelog via the REST API.
  */
