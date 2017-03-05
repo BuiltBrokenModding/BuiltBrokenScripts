@@ -41,7 +41,7 @@ def curseRelationsNV = {
     optionalLibrary 'opencomputers'
 }
 
-curse"for" +ge{
+curseforge{
   if (project.hasProperty("bbmcurse")) {
         apiKey = project.bbmcurse
     }
