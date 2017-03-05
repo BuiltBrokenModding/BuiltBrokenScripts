@@ -55,12 +55,12 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     mainArtifact(jar) {
-      displayName = "VoltzEngine ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "VoltzEngine ${project.version}-UNSTABLE build" + project.getBuildNumber() +  for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "VoltzEngine ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "VoltzEngine ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + for minecraft.version
     }
   }
   project {
@@ -70,12 +70,12 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     mainArtifact(jar) {
-      displayName = "ICBM ${project.version}-UNSTABLE build ${project.getBuildNumber()} for 1.7.10"
+      displayName = "ICBM ${project.version}-UNSTABLE build + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-        displayName = "ICBM ${project.version}-UNSTABLE build ${project.getBuildNumber()} for 1.7.10"
+        displayName = "ICBM ${project.version}-UNSTABLE build + project.getBuildNumber() + for minecraft.version
     }
   }
   project {
@@ -85,7 +85,7 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "release"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     mainArtifact(jar) {
       displayName = "NEK version: ${project.version}"
     }
@@ -100,12 +100,12 @@ curseforge{
     releaseType = "alpha"
     changelog = file('changelog.html')
     changelogType = 'html'
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     mainArtifact(jar) {
-      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE-Deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE-Deobf build + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -113,14 +113,14 @@ curseforge{
     id = '256398'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Basic Industry ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Basic Industry ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "Basic Industry ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Basic Industry ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -128,14 +128,14 @@ curseforge{
     id = '238546'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "MFFS ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "MFFS ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "MFFS ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "MFFS ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -143,14 +143,14 @@ curseforge{
     id = '256467'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -158,14 +158,14 @@ curseforge{
     id = '256548'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -173,14 +173,14 @@ curseforge{
     id = '256605'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -188,14 +188,14 @@ curseforge{
     id = '235544'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Assembly Line ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Assembly Line ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -203,14 +203,14 @@ curseforge{
     id = '250881'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -218,14 +218,14 @@ curseforge{
     id = '250880'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -233,14 +233,14 @@ curseforge{
     id = '248343'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -248,14 +248,14 @@ curseforge{
     id = '246228'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -263,14 +263,14 @@ curseforge{
     id = '238695'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -278,14 +278,14 @@ curseforge{
     id = '233189'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -293,14 +293,14 @@ curseforge{
     id = '233525'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-RedCow ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-RedCow ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-RedCow ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "SBM-RedCow ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -308,14 +308,14 @@ curseforge{
     id = '236575'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "AddictedToRed ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "AddictedToRed ${project.version}-UNSTABLE build " + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "AddictedToRed ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "AddictedToRed ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -323,14 +323,14 @@ curseforge{
     id = '233019'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "AI Improvements ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "AI Improvements ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "AI Improvements ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "AI Improvements ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -338,14 +338,14 @@ curseforge{
     id = '243419'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Announcement-Mod ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Announcement-Mod ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "Announcement-Mod ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Announcement-Mod ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -353,14 +353,14 @@ curseforge{
     id = '233511'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ColoredChests ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ColoredChests ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "ColoredChests ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ColoredChests ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -368,14 +368,14 @@ curseforge{
     id = '233655'
     relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "WoodenRails ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "WoodenRails ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "WoodenRails ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "WoodenRails ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -383,14 +383,14 @@ curseforge{
     id = '224319'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Artillects ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Artillects ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "Artillects ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "Artillects ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
   project{
@@ -398,14 +398,14 @@ curseforge{
     id = '244451'
     relations curseRelations
     releaseType = "alpha"
-    addGameVersion "1.7.10"
+    addGameVersion "minecraft.version"
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ICBM - Classic ${project.version}-UNSTABLE build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ICBM - Classic ${project.version}-UNSTABLE build" + project.getBuildNumber() + for minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "ICBM - Classic ${project.version}-UNSTABLE-deobf build ${project.getBuildNumber}() for 1.7.10"
+      displayName = "ICBM - Classic ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + for minecraft.version
     }
   }
 }
