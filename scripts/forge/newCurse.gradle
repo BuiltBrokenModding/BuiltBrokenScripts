@@ -192,10 +192,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Assembly Line ${project.version}-UNSTABLE build" + project.getBuildNumber() + "for" + minecraft.version
+      displayName = "Assembly Line ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build" + project.getBuildNumber() + "for" + minecraft.version
+      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
   project{
