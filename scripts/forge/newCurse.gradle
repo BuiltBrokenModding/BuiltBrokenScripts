@@ -41,6 +41,11 @@ def curseRelationsNV = {
     optionalLibrary 'opencomputers'
 }
 
+def curseRelationsSVF = {
+  requiredLibrary 've-fluidhandling'
+  optionalLibrary 'voltz-engine'
+}
+
 curseforge{
   if (project.hasProperty("bbmcurse")) {
         apiKey = project.bbmcurse
@@ -276,7 +281,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsNV
+    relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
