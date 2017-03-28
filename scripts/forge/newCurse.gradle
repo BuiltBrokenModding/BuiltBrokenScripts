@@ -430,7 +430,7 @@ curseforge{
   }
   project{
   //SBM-GasCan
-    id = '262806'
+    id = '263785'
     relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
