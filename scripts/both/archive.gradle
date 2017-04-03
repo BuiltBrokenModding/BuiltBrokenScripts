@@ -1,4 +1,5 @@
-if (project.hasProperty("bambooshortPlanName") && project.getProperty("local") == "BM-Dev""){
+if (project.hasProperty("bambooshortPlanName") && project.getProperty("local") == "BM-Dev")
+{
     group = "dev.${org}.${groupid}"
     archivesBaseName = "${archivebase}"
 } else {
