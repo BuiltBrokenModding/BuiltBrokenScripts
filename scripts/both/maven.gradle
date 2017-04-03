@@ -4,6 +4,7 @@ publishing {
         mavenJava(MavenPublication)
         {
             artifact jar
+            if (project.hasProperty("minecraft"))
             artifact deobfJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
@@ -14,11 +15,11 @@ publishing {
                 classifier "CompiledWith"
                 extension "txt"
             }
-            if (project.hasProperty("bambooBuildNumber"))
+            /*/*if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
                 extension "xml"
-            }
+            }*/
             from components.java
         }
         //prints the current date to the pom file.
