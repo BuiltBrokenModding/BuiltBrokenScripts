@@ -3,7 +3,7 @@ publishing {
     publications {
         mavenJava(MavenPublication)
         {
-            artifact jar
+            //artifact jar
             if (project.hasProperty("minecraft"))
             artifact deobfJar
             artifact("output/gradle.properties") {
@@ -21,14 +21,12 @@ publishing {
                 extension "xml"
             }*/
             from components.java
-        }
-        //prints the current date to the pom file.
-        myPublication(MavenPublication) {
-            //from components.java
+            //prints the current date to the pom file.
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }
         }
+        //prints the current date to the pom file.
 }
 
     repositories {
