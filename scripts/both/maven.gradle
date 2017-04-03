@@ -19,7 +19,7 @@ publishing {
                 classifier "changelog"
                 extension "xml"
             }
-            //from components.java
+            from components.java
         }
         //prints the current date to the pom file.
         myPublication(MavenPublication) {
