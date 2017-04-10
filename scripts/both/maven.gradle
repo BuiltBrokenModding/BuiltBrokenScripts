@@ -3,7 +3,8 @@ publishing {
     publications {
         mavenJava(MavenPublication)
         {
-            artifact jar
+            //artifact jar
+            if (project.hasProperty("minecraft"))
             artifact deobfJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
@@ -14,16 +15,19 @@ publishing {
                 classifier "CompiledWith"
                 extension "txt"
             }
-            if (project.hasProperty("bambooBuildNumber"))
+            //if (gradle.taskGraph.hasTask("apiZip"))
+            //artifact apiZip
+            /*/*if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
                 extension "xml"
+            }*/
+            artifact ("changelog.html"){
+                classifier "changelog"
+                extension "html"
             }
-            //from components.java
-        }
-        //prints the current date to the pom file.
-        myPublication(MavenPublication) {
-            //from components.java
+            from components.java
+            //prints the current date to the pom file.
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }
