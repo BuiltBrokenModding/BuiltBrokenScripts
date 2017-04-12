@@ -1,4 +1,4 @@
-buildscript {
+/*buildscript {
   repositories {
     maven {
       url "https://plugins.gradle.org/m2/"
@@ -7,7 +7,7 @@ buildscript {
   dependencies {
     classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.8"
   }
-}
+}*/
 
 apply plugin: "com.matthewprenger.cursegradle"
 
