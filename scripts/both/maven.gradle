@@ -15,8 +15,6 @@ publishing {
                 classifier "CompiledWith"
                 extension "txt"
             }
-            //if (gradle.taskGraph.hasTask("apiZip"))
-            //artifact apiZip
             /*/*if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
@@ -26,6 +24,10 @@ publishing {
                 classifier "changelog"
                 extension "html"
             }
+            if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
+            artifact apiZip
+            if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
+            artifact templetesZip
             //from components.java
             //prints the current date to the pom file.
             pom.withXml {
