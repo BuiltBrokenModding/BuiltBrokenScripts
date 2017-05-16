@@ -1,4 +1,4 @@
-task copyMethodWithExplicitDependencies{
+task copySrcgen{
     mustRunAfter 'clean'
     mustRunAfter 'clearSrc'
   
