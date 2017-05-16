@@ -1,6 +1,6 @@
 task copySrcgen{
     mustRunAfter 'clean'
-    mustRunAfter 'clearSrc'
+    //mustRunAfter 'clearSrc'
   
     copy {       
         from fileTree('src/gen')
