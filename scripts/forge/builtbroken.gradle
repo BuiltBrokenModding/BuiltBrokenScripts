@@ -31,7 +31,7 @@ minecraft {
 }
 
 //Prints the minecraft version to console.
-println "Current Minecraft version = " + minecraft.apiVersion
+println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
 
 //Prints your current dependencies to a file.
 task printDependencies {
