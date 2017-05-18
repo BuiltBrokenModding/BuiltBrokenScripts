@@ -15,6 +15,8 @@ buildscript {
 if (!project.hasProperty("bambooshortPlanName"))
     ext.bambooshortPlanName = ""
 
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8.9/scripts/both/printdeps.gradle'
+
 javadoc {
     source = sourceSets.main.allJava
 }
@@ -30,13 +32,17 @@ if (new File(projectDir, '.git').exists()) {
     gitHash = repo.log().find().abbreviatedId
 }
 
+/*
+Creats a shared Manifest for each jar to prevent copy and paste stuff.
+
+*/
 if (project.hasProperty("coremod"))
     {
     ext.sharedManifest = manifest {
     attributes("Built-By": System.getProperty('user.name'),
                "Created-By": currentJvm,
                "Implementation-Title": archivesBaseName,
-               "Implementation-Version": project.version,
+               "Implementation-Version": version,
                "Git-Hash": gitHash,
                "FMLCorePlugin": coremod,
                "FMLCorePluginContainsFMLMod": "true")
@@ -48,7 +54,7 @@ else
     attributes("Built-By": System.getProperty('user.name'),
                "Created-By": currentJvm,
                "Implementation-Title": archivesBaseName,
-               "Implementation-Version": project.version,
+               "Implementation-Version": version,
                "Git-Hash": gitHash)
     }
 }
@@ -94,10 +100,10 @@ task copyBuildXml(type: Copy) {
 }
 
 jar {
-     dependsOn copyBuildXml
+     dependsOn copyBuildXml, printDeps
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
-     else classifier = "universal"
+     /*if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
+     else classifier = "universal"*/
      //sets where the jars go to.
      destinationDir = file 'output'
      manifest = project.manifest {
@@ -106,4 +112,4 @@ jar {
      }
 }
 
-tasks.build.dependsOn sourcesJar, deobfJar
+tasks.build.dependsOn deobfJar

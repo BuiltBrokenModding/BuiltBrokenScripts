@@ -1,29 +1,47 @@
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
 }
 
 //Applies the scala plugin
 apply plugin: 'scala'
 //applies the forge plugin
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'forge'
 
 minecraft {
-    version = "1.8.9-11.15.1.1855"
+    version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "run"
-    mappings = "snapshot_20160210"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
 }
 
-println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
+//Prints the minecraft version to console.
+println "Current Minecraft version = " + minecraft.apiVersion
+
+//Prints your current dependencies to a file.
+task printDependencies {
+    //dumpes what the project was compiled with into a text file.
+    doLast {
+         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
+     }
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupDevWorkspace"
+     mustRunAfter "setupCIWorkspace"
+}
+
+tasks.build.dependsOn printDependencies
