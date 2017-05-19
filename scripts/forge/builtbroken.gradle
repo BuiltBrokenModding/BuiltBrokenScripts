@@ -36,7 +36,7 @@ task printDependencies {
      }
      mustRunAfter "setupDecompWorkspace"
      mustRunAfter "setupDevWorkspace"
-     mustRunAfter "setupCIWorkspace"
+     mustRunAfter "setupCiWorkspace"
 }
 
 tasks.build.dependsOn printDependencies
