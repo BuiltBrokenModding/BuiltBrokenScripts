@@ -22,7 +22,7 @@ minecraft {
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
-    mappings = "snapshot_20160301"
+    mappings = "snapshot_20151128"
 }
 
 //Prints the minecraft version to console.
