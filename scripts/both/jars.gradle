@@ -15,52 +15,10 @@ buildscript {
 if (!project.hasProperty("bambooshortPlanName"))
     ext.bambooshortPlanName = ""
 
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/buildScripts/scripts/both/printdeps.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.8.9/scripts/both/printdeps.gradle'
 
 javadoc {
     source = sourceSets.main.allJava
-}
-
-javadoc.dependsOn(sourceMainJava)
-javadoc.dependsOn(sourceMainScala)
-
-task javadocJar(type: Jar, dependsOn: 'javadoc') {
-     from javadoc.destinationDir
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
-     else classifier = "javadoc"
-     //sets where the jars go to.
-     destinationDir = file 'output'
-     mustRunAfter "sourceMainScala"
-     mustRunAfter "sourceMainJava"
-}
-
-task deobfJar(type: Jar) {
-     dependsOn javadoc
-     from sourceSets.main.output
-     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
-     else classifier = "deobf"
-     from javadoc.destinationDir
-     //sets where the jars go to.
-     destinationDir = file 'output'
-     mustRunAfter "sourceMainScala"
-     mustRunAfter "sourceMainJava"
-}
-
-task sourcesJar(type: Jar) {
-     from sourceSets.main.allJava
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "src-dev"
-     else classifier = "src"
-     //sets where the jars go to.
-     destinationDir = file 'output'
-     mustRunAfter "sourceMainScala"
-     mustRunAfter "sourceMainJava"
-}
-
-//copies the build.properties to the output dir for maven publishing.
-task copyBuildXml(type: Copy) {
-     from 'gradle.properties'
-     into 'output'
 }
 
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
@@ -74,21 +32,84 @@ if (new File(projectDir, '.git').exists()) {
     gitHash = repo.log().find().abbreviatedId
 }
 
+/*
+Creats a shared Manifest for each jar to prevent copy and paste stuff.
+
+*/
+if (project.hasProperty("coremod"))
+    {
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": version,
+               "Git-Hash": gitHash,
+               "FMLCorePlugin": coremod,
+               "FMLCorePluginContainsFMLMod": "true")
+    }
+}
+else
+{
+    ext.sharedManifest = manifest {
+    attributes("Built-By": System.getProperty('user.name'),
+               "Created-By": currentJvm,
+               "Implementation-Title": archivesBaseName,
+               "Implementation-Version": version,
+               "Git-Hash": gitHash)
+    }
+}
+
+task javadocJar(type: Jar, dependsOn: 'javadoc') {
+     from javadoc.destinationDir
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "javadoc-dev"
+     else classifier = "javadoc"
+     //sets where the jars go to.
+     destinationDir = file 'output'
+     mustRunAfter "sourceMainScala"
+}
+
+task deobfJar(type: Jar) {
+     from sourceSets.main.output
+     //if project name is BBM-Dev it makes the deobf jar deobf-dev if not its just deobf
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "deobf-dev"
+     else classifier = "deobf"
+     //sets where the jars go to.
+     destinationDir = file 'output'
+     manifest = project.manifest {
+        from sharedManifest
+    }
+     mustRunAfter "jar" 
+}
+
+task sourcesJar(type: Jar) {
+     from sourceSets.main.allJava
+     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "src-dev"
+     else classifier = "src"
+     //sets where the jars go to.
+     destinationDir = file 'output'
+     manifest = project.manifest {
+        from sharedManifest
+     }
+     mustRunAfter "jar"
+}
+
+//copies the build.properties to the output dir for maven publishing.
+task copyBuildXml(type: Copy) {
+     from 'gradle.properties'
+     into 'output'
+}
+
 jar {
      dependsOn copyBuildXml, printDeps
      //if project has the property BBM-Dev then it appends dev to indicate the dev branch
-     if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
-     else classifier = "universal"
+     /*if (project.getProperty("bambooshortPlanName") == "BBM-Dev") classifier = "dev-universal"
+     else classifier = "universal"*/
      //sets where the jars go to.
      destinationDir = file 'output'
-     manifest.mainAttributes(
-            "Built-By": System.getProperty('user.name'),
-            "Created-By": currentJvm,
-            "Implementation-Title": archivesBaseName,
-            "Implementation-Version": project.version,
-            "Git-Hash": gitHash,
-     )
+     manifest = project.manifest {
+        from sharedManifest
      
+     }
 }
 
-tasks.build.dependsOn javadocJar, sourcesJar, deobfJar
+tasks.build.dependsOn deobfJar

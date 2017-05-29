@@ -4,32 +4,23 @@ publishing {
         mavenJava(MavenPublication)
         {
             artifact jar
-            if (project.hasProperty("minecraft"))
             artifact deobfJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
                 extension "properties"
             }
-            if (project.hasProperty("minecraft"))
             artifact ("CompiledWith.txt") {
                 classifier "CompiledWith"
                 extension "txt"
             }
-            /*/*if (project.hasProperty("bambooBuildNumber"))
+            if (project.hasProperty("bambooBuildNumber"))
             artifact ("changelog.xml") {
                 classifier "changelog"
                 extension "xml"
-            }*/
-            artifact ("changelog.html"){
-                classifier "changelog"
-                extension "html"
             }
-            if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
-            artifact apiZip
-            if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
-            artifact templetesZip
+        }
+        myPublication(MavenPublication) {
             //from components.java
-            //prints the current date to the pom file.
             pom.withXml {
                 asNode().appendNode('description', 'Created on ' + getDate())
             }
@@ -42,7 +33,7 @@ publishing {
             if (project.hasProperty("local") && project.getProperty("local") == "true")
                 url "file:" + projectDir.path + "/build/maven"
             else
-                url "file:///home/services/dmod/maven"
+                url "file:///usr/share/nginx/html/maven"
         }
     }
 }

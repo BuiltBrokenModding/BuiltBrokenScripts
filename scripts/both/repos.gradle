@@ -1,47 +1,32 @@
 repositories {
+    mavenCentral()
     jcenter()
     maven {
-        name "Mobius Repo"
-        url "http://mobiusstrip.eu/maven"
+        name "dsiriusArt"
+        url "http://box1.dmodoomsirius.me:8081/artifactory/libs-release/"
     }
-    maven {
-        name 'CB Repo'
-        url "http://chickenbones.net/maven/"
+	ivy {
+		name "CoFHLib"
+		artifactPattern "http://addons-origin.cursecdn.com/files/2236/777/[module]-[revision].[ext]"
+	}
+	ivy {
+		name "CoFHCore"
+		artifactPattern "http://addons-origin.cursecdn.com/files/2234/199/[module]-[revision].[ext]"
     }
-    maven { 
-        name 'OC Maven'
-        url = "http://maven.cil.li/" 
+	ivy {
+		name "RedstoneArsenal"
+        artifactPattern "http://addons-origin.cursecdn.com/files/2233/786/[module]-[revision].[ext]"
     }
-    maven {
-        name="bbm"
-        url="http://api.dmodoomsirius.me/"
+	ivy {
+		name "ThermalExpansion"
+        artifactPattern "http://addons-origin.cursecdn.com/files/2233/797/[module]-[revision].[ext]"
     }
-    maven {
-        name "xcompwiz"
-        url "http://maven.xcompwiz.com"
+	ivy {
+		name "ThermalFoundation"
+        artifactPattern "http://addons-origin.cursecdn.com/files/2233/781/[module]-[revision].[ext]"
     }
-    maven {
-        name = "BluePower"
-        url = "http://maven.bluepowermod.com/"
-    }
-    maven {
-        name = "ic2, forestry"
-        url = "http://maven.ic2.player.to/"
-    }
-    maven {
-        name = "IGW"
-        url = "http://maven.k-4u.nl/"
-    }
-    maven {
-        name 'DVS1 Maven FS'
-        url 'http://dvs1.progwml6.com/files/maven'
-    }
-    maven {
-        name 'ProjectRed'
-        url 'http://files.projectredwiki.com/maven/'
-    }
-    maven {
-        name 'ColoredLightCore'
-        url "http://coloredlightscore.us.to/maven/clc/"
-    }
+	ivy {
+		name "BloodMagic"
+		artifactPattern "http://addons.cursecdn.com/files/2234/423/[module]-[revision].[ext]"
+	}
 }
