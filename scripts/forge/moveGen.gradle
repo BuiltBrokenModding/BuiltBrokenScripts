@@ -1,0 +1,10 @@
+task copySrcgen{
+    mustRunAfter 'clean'
+    //mustRunAfter 'clearSrc'
+  
+    copy {       
+        from fileTree('src/gen')
+        into 'src/main'
+        include '**/*'
+    }
+}
