@@ -1,7 +1,7 @@
 //This is all the build scripts we use in the submodule
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/scripts/both/getbuildnumber.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/scripts/forge/builtbroken.gradle'
-apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/index/index-both.gradle'
+apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/index/index-both.gradle'
 //apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/scripts/forge/deps.gradle'
 //apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/scripts/forge/version.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.12/scripts/forge/forgeV.gradle'
