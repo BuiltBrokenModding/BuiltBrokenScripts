@@ -14,9 +14,9 @@ apply plugin: 'scala'
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 minecraft {
-    version = "1.11-13.19.1.2199"
+    version = "1.11.2-13.20.0.2315"
     runDir = "run"
-    mappings = "snapshot_20170106"
+    mappings = 'stable_32'
 }
 
 println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
