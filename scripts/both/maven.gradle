@@ -4,12 +4,14 @@ publishing {
         mavenJava(MavenPublication)
         {
             artifact jar
+            //checks if minecraft is in the project.
             if (project.hasProperty("minecraft"))
             artifact deobfJar
             artifact("output/gradle.properties") {
                 classifier "gradle"
                 extension "properties"
             }
+            //checks if minecraft is in the project.
             if (project.hasProperty("minecraft"))
             artifact ("CompiledWith.txt") {
                 classifier "CompiledWith"
@@ -24,6 +26,7 @@ publishing {
                 classifier "changelog"
                 extension "html"
             }
+            //checks if the archivebase matches VoltzEngine. Will break if name is changed.
             if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
             artifact apiZip
             if (project.hasProperty("archivebase") && project.getProperty("archivebase") == "VoltzEngine")
