@@ -1,13 +1,13 @@
-/*buildscript {
+buildscript {
   repositories {
     maven {
       url "https://plugins.gradle.org/m2/"
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.8"
+    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.9"
   }
-}*/
+}
 
 apply plugin: "com.matthewprenger.cursegradle"
 
@@ -486,6 +486,21 @@ curseforge{
     }
     addArtifact(deobfJar){
       displayName = "Sentry-AA ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //SBM-OilOre
+    id = '267405'
+    relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
 }
