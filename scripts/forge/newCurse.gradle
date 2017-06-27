@@ -161,7 +161,7 @@ curseforge{
   project{
   //SBM Bagable Plants
     id = '256548'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -176,7 +176,7 @@ curseforge{
   project{
   //SBM Cacti Bucket
     id = '256605'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -206,7 +206,7 @@ curseforge{
   project{
   //SBM Magic Mirror
     id = '250881'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -221,7 +221,7 @@ curseforge{
   project{
   //SBM Wooden Shears
     id = '250880'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -236,7 +236,7 @@ curseforge{
   project{
   //SBM CardboardBoxes
     id = '248343'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -266,7 +266,7 @@ curseforge{
   project{
   //SBM Bone Torch
     id = '238695'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -281,7 +281,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsSVF
+    //relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -296,7 +296,7 @@ curseforge{
   project{
   //SBM Red Cow
     id = '233525'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -356,7 +356,7 @@ curseforge{
   project{
   //SBM Colored Chests
     id = '233511'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -371,7 +371,7 @@ curseforge{
   project{
   //SBM Wooden Rails
     id = '233655'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -431,7 +431,7 @@ curseforge{
   project{
   //SBM-GasCan
     id = '263785'
-    relations curseRelationsSVF
+    //relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -491,7 +491,7 @@ curseforge{
   project{
   //SBM-OilOre
     id = '267405'
-    relations curseRelationsSVF
+    //relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
