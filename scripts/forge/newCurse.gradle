@@ -416,7 +416,7 @@ curseforge{
   project{
   //VE-FluidHandeling
     id = '262806'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
