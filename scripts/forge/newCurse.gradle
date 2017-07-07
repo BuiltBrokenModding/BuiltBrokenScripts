@@ -43,7 +43,10 @@ def curseRelationsNV = {
 
 def curseRelationsSVF = {
   requiredLibrary 've-fluidhandling'
-  optionalLibrary 'voltz-engine'
+}
+
+def curseRelationsWB = {
+  requiredLibrary 've-fluidhandling'
 }
 
 curseforge{
@@ -281,7 +284,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsSVF
+    relations curseRelationsWB
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
