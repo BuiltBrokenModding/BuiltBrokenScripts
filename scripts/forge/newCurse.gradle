@@ -281,7 +281,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    //relations curseRelationsSVF
+    relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
