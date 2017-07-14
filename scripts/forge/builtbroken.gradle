@@ -18,6 +18,10 @@ minecraft {
     version = "1.12-14.21.0.2372"
     runDir = "run"
     mappings = "snapshot_20170625"
+    replace "@MAJOR@", version_major
+    replace "@MINOR@", version_minor
+    replace "@REVIS@", version_revis
+    replace "@BUILD@", project.getBuildNumber()
 }
 
 println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
