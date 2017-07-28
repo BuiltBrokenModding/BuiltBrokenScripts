@@ -1,15 +1,15 @@
-/*buildscript {
+buildscript {
   repositories {
     maven {
       url "https://plugins.gradle.org/m2/"
     }
   }
   dependencies {
-    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.40"
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.50"
   }
 }
 
-apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"*/
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 /**
  * Generates a Bamboo XML changelog via the REST API.
@@ -53,8 +53,9 @@ task("createChangelog").doLast {
     out.close()
 }
 
-/*task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-    filePath = "changelog.html"
+task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+    //filePath = "changelog.html"
+    file = new File("changelog.html");
     untaggedName = "Current release ${project.version}"
     fromCommit = startGitRev
     toRef =  "HEAD"
@@ -64,7 +65,7 @@ task("createChangelog").doLast {
   <h3>{{name}}</h3>
   <ul>
     {{#commits}}
-    <li> <a href="https://github.com/BuiltBrokenModding/VoltzEngine/commit/{{hash}}" target=_blank> {{{message}}}</a>
+    <li> <a href="https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}" target=_blank> {{{message}}}</a>
 </li>
     {{/commits}}
   </ul>
@@ -72,4 +73,4 @@ task("createChangelog").doLast {
 """
 }
 
-tasks.build.dependsOn makeChangelog*/
+tasks.build.dependsOn makeChangelog
