@@ -1,0 +1,7 @@
+ext.GrGitHash{
+	def gitHash = 'unknown'
+	if (new File(projectDir, '.git').exists()) {
+    def repo = Grgit.open(project.file('.'))
+    gitHash = repo.log().find().abbreviatedId
+	}
+}
