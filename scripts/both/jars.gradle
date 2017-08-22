@@ -112,4 +112,4 @@ jar {
      }
 }
 
-tasks.build.dependsOn deobfJar
+tasks.build.dependsOn deobfJar, copyBuildXml
