@@ -6,4 +6,6 @@ dependencies
     compile "tconstruct:TConstruct:1.7.10-1.8.7.build981:deobf"
     compile "com.builtbroken.minecraftjunit:MinecraftJUnit:1.7.10-0.+:deobf"
     compile "net.industrial-craft:industrialcraft-2:2.2.824-experimental:dev"
+    compile "codechicken:NotEnoughItems:1.7.10-1.0.5.120:dev"
+    compile "codechicken:CodeChickenCore:1.7.10-1.0.7.47:dev"
 }
