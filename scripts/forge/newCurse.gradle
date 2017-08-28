@@ -449,7 +449,7 @@ curseforge{
   project{
   //BBM-Armory
     id = '235545'
-    relations curseRelationsVE
+    relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
