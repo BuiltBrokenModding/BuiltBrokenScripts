@@ -464,7 +464,17 @@ curseforge{
   project{
   //ICBM Sentries
     id = '266848'
-    relations curseRelationsVE
+    relations {
+        optionalLibrary 'cofhcore'
+    	optionalLibrary 'thermal-foundation'
+    	optionalLibrary 'thermalexpansion'
+    	requiredLibrary 'voltz-engine'
+    	optionalLibrary 'notenoughitems'
+    	optionalLibrary 'waila'
+    	optionalLibrary 'opencomputers'
+    	requiredLibrary 'the-armory'
+	}
+      }
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -477,7 +487,7 @@ curseforge{
     }
   }
   project{
-  //ICBM Sentries
+  //Sentry-AA
     id = '266845'
     relations curseRelationsVE
     releaseType = "alpha"
