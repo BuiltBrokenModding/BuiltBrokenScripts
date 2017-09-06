@@ -515,3 +515,4 @@ curseforge{
       displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
+}
