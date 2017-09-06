@@ -473,8 +473,7 @@ curseforge{
     	optionalLibrary 'waila'
     	optionalLibrary 'opencomputers'
     	requiredLibrary 'the-armory'
-	}
-      }
+    }
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -516,4 +515,3 @@ curseforge{
       displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
-}
