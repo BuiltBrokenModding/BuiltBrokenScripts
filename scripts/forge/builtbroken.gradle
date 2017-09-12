@@ -38,3 +38,4 @@ task printDependencies {
 }
 
 println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
+tasks.build.dependsOn printDependencies
