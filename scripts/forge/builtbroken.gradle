@@ -20,6 +20,21 @@ minecraft {
     version = "1.9.4-12.17.0.1940"
     runDir = "run"
     mappings = "snapshot_20160518"
+    replace "@MAJOR@", version_major
+    replace "@MINOR@", version_minor
+    replace "@REVIS@", version_revis
+    replace "@BUILD@", project.getBuildNumber()
+}
+
+//Prints your current dependencies to a file.
+task printDependencies {
+    //dumpes what the project was compiled with into a text file.
+    doLast {
+         file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
+     }
+     mustRunAfter "setupDecompWorkspace"
+     mustRunAfter "setupDevWorkspace"
+     mustRunAfter "setupCiWorkspace"
 }
 
 println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
