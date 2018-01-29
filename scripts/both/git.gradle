@@ -1,7 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+    }
+    dependencies {
+        classpath "org.ajoberstar.grgit:2.1.0"
+    }
+}
+
+import org.ajoberstar.grgit.*
+
 ext.GrGitHash{
-	def gitHash = 'unknown'
-	if (new File(projectDir, '.git').exists()) {
-    def repo = Grgit.open(project.file('.'))
-    gitHash = repo.log().find().abbreviatedId
-	}
+    def gitHash = 'unknown'
+    if (new File(projectDir, '.git').exists()) {
+    def repo = Grgit.open(currentDir: file('.'))
+    }
 }
