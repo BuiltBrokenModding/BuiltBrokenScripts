@@ -22,7 +22,7 @@ minecraft {
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
-    replace "@MC@", version_mc
+    replace "@MC@", minecraft.version
 }
 
 println "Current Minecraft version = " + minecraft.version + "-" + minecraft.forgeVersion
