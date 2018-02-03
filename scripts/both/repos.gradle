@@ -5,7 +5,7 @@ repositories {
         name "dsiriusArt"
         url "http://box1.dmodoomsirius.me:8081/artifactory/libs-release/"
     }
-	ivy {
+	/*ivy {
 		name "CoFHLib"
 		artifactPattern "http://addons-origin.cursecdn.com/files/2236/777/[module]-[revision].[ext]"
 	}
@@ -28,5 +28,5 @@ repositories {
 	ivy {
 		name "BloodMagic"
 		artifactPattern "http://addons.cursecdn.com/files/2234/423/[module]-[revision].[ext]"
-	}
+	}*/
 }
