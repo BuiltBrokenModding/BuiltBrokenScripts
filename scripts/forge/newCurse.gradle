@@ -149,7 +149,7 @@ curseforge{
   project{
   //SBM Helm Bucket
     id = '256467'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -254,7 +254,7 @@ curseforge{
   project{
   //Progressive World Cleanup
     id = '246228'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -284,7 +284,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsWB
+    //relations curseRelationsWB
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -329,7 +329,7 @@ curseforge{
   project{
   //AI Improvements
     id = '233019'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -344,7 +344,7 @@ curseforge{
   project{
   //External Announcements
     id = '243419'
-    relations curseRelationsNV
+    //relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -465,7 +465,7 @@ curseforge{
   //ICBM Sentries
     id = '266848'
     relations {
-        optionalLibrary 'cofhcore'
+      optionalLibrary 'cofhcore'
     	optionalLibrary 'thermal-foundation'
     	optionalLibrary 'thermalexpansion'
     	requiredLibrary 'voltz-engine'

@@ -13,7 +13,7 @@ apply plugin: "org.ajoberstar.grgit"
 
 import org.ajoberstar.grgit.*
 
-ext.GitHash = {
+ext.GitHash() = {
     //return gitHash()
     def gitHash = 'unknown'
     if (new File(projectDir, '.git').exists()) {
