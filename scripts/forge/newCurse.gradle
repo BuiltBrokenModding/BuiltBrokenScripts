@@ -545,5 +545,20 @@ curseforge{
       displayName = "SBM-Snow Power ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
+  project{
+  //Night Vision Decay Fix
+    id = '290156'
+    //relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
   
 }
