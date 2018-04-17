@@ -560,5 +560,34 @@ curseforge{
       displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
-  
+  project{
+  //[SBM] Merpig
+    id = '291703'
+    //relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //World Of Boxes
+    id = '291482'
+    //relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "World Of Boxes ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "World Of Boxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
 }
