@@ -590,4 +590,19 @@ curseforge{
       displayName = "World Of Boxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
+  project{
+  //SBM-JukeBox
+    id = '292430'
+    //relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
 }
