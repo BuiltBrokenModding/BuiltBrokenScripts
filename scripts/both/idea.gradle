@@ -7,6 +7,9 @@ idea.project.ipr {
 }
 
 idea.module.iml {
+    beforeMerged { module ->
+        module.dependencies.clear()
+    }
     whenMerged { module ->
         module.dependencies*.exported = true
     }
