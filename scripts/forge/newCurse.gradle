@@ -25,7 +25,7 @@ def curseRelations = {
     optionalLibrary 'cofhcore'
     optionalLibrary 'thermal-foundation'
     optionalLibrary 'thermalexpansion'
-    requiredLibrary 'voltz-engine'
+    requiredDependency 'voltz-engine'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
@@ -42,11 +42,11 @@ def curseRelationsNV = {
 }
 
 def curseRelationsSVF = {
-  requiredLibrary 've-fluidhandling'
+  requiredDependency 've-fluidhandling'
 }
 
 def curseRelationsWB = {
-  requiredLibrary 've-fluidhandling'
+  requiredDependency 've-fluidhandling'
 }
 
 curseforge{
@@ -468,11 +468,11 @@ curseforge{
       optionalLibrary 'cofhcore'
     	optionalLibrary 'thermal-foundation'
     	optionalLibrary 'thermalexpansion'
-    	requiredLibrary 'voltz-engine'
+    	requiredDependency 'voltz-engine'
     	optionalLibrary 'notenoughitems'
     	optionalLibrary 'waila'
     	optionalLibrary 'opencomputers'
-    	requiredLibrary 'the-armory'
+    	requiredDependency 'the-armory'
     }
     releaseType = "alpha"
     addGameVersion minecraft.version
