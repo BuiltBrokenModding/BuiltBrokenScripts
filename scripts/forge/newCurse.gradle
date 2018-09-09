@@ -22,7 +22,7 @@ def curseRelationsNV = {
 }
 
 def curseRelationsSVF = {
-  requiredLibrary 've-fluidhandling
+  requiredLibrary 've-fluidhandling'
 }
 
 curseforge{
