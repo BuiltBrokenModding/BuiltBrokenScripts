@@ -13,37 +13,16 @@ apply plugin: "com.matthewprenger.cursegradle"
 
 
 def curseRelationsVE = {
-    optionalLibrary 'cofhcore'
-    optionalLibrary 'thermal-foundation'
-    optionalLibrary 'thermalexpansion'
-    optionalLibrary 'notenoughitems'
-    optionalLibrary 'waila'
-    optionalLibrary 'opencomputers'
 }
 
 def curseRelations = {
-    optionalLibrary 'cofhcore'
-    optionalLibrary 'thermal-foundation'
-    optionalLibrary 'thermalexpansion'
-    requiredLibrary 'voltz-engine'
-    optionalLibrary 'notenoughitems'
-    optionalLibrary 'waila'
-    optionalLibrary 'opencomputers'
 }
 
 def curseRelationsNV = {
-    optionalLibrary 'cofhcore'
-    optionalLibrary 'thermal-foundation'
-    optionalLibrary 'thermalexpansion'
-    optionalLibrary 'voltz-engine'
-    optionalLibrary 'notenoughitems'
-    optionalLibrary 'waila'
-    optionalLibrary 'opencomputers'
 }
 
 def curseRelationsSVF = {
-  requiredLibrary 've-fluidhandling'
-  optionalLibrary 'voltz-engine'
+  requiredLibrary 've-fluidhandling
 }
 
 curseforge{
