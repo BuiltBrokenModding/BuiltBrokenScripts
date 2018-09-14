@@ -25,7 +25,7 @@ def curseRelations = {
     optionalLibrary 'cofhcore'
     optionalLibrary 'thermal-foundation'
     optionalLibrary 'thermalexpansion'
-    requiredDependency 'voltz-engine'
+    requiredLibrary 'voltz-engine'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
@@ -42,11 +42,11 @@ def curseRelationsNV = {
 }
 
 def curseRelationsSVF = {
-  requiredDependency 've-fluidhandling'
+  requiredLibrary 've-fluidhandling'
 }
 
 def curseRelationsWB = {
-  requiredDependency 've-fluidhandling'
+  requiredLibrary 've-fluidhandling'
 }
 
 curseforge{
