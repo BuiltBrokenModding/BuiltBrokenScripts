@@ -380,7 +380,7 @@ curseforge{
   project{
   //ICBM - Classic
     id = '244451'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
