@@ -1,28 +1,52 @@
-/*buildscript {
+buildscript {
   repositories {
     maven {
       url "https://plugins.gradle.org/m2/"
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.0.8"
+    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.1.0"
   }
-}*/
+}
 
 apply plugin: "com.matthewprenger.cursegradle"
 
 
 def curseRelationsVE = {
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
 }
 
 def curseRelations = {
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
+    requiredDependency 'voltz-engine'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
 }
 
 def curseRelationsNV = {
+    optionalLibrary 'cofhcore'
+    optionalLibrary 'thermal-foundation'
+    optionalLibrary 'thermalexpansion'
+    optionalLibrary 'voltz-engine'
+    optionalLibrary 'notenoughitems'
+    optionalLibrary 'waila'
+    optionalLibrary 'opencomputers'
 }
 
 def curseRelationsSVF = {
-  requiredLibrary 've-fluidhandling'
+  requiredDependency 've-fluidhandling'
+}
+
+def curseRelationsWB = {
+  requiredDependency 've-fluidhandling'
 }
 
 curseforge{
@@ -65,7 +89,7 @@ curseforge{
   project {
   //NotEnoughKeys
     id = '224614'
-    //relations curseRelations
+    ////relations curseRelations
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "release"
@@ -125,7 +149,7 @@ curseforge{
   project{
   //SBM Helm Bucket
     id = '256467'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -140,7 +164,7 @@ curseforge{
   project{
   //SBM Bagable Plants
     id = '256548'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -155,7 +179,7 @@ curseforge{
   project{
   //SBM Cacti Bucket
     id = '256605'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -185,7 +209,7 @@ curseforge{
   project{
   //SBM Magic Mirror
     id = '250881'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -200,7 +224,7 @@ curseforge{
   project{
   //SBM Wooden Shears
     id = '250880'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -215,7 +239,7 @@ curseforge{
   project{
   //SBM CardboardBoxes
     id = '248343'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -230,7 +254,7 @@ curseforge{
   project{
   //Progressive World Cleanup
     id = '246228'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -245,7 +269,7 @@ curseforge{
   project{
   //SBM Bone Torch
     id = '238695'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -260,7 +284,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsSVF
+    ////relations curseRelationsWB
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -275,7 +299,7 @@ curseforge{
   project{
   //SBM Red Cow
     id = '233525'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -305,7 +329,7 @@ curseforge{
   project{
   //AI Improvements
     id = '233019'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -320,7 +344,7 @@ curseforge{
   project{
   //External Announcements
     id = '243419'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -335,7 +359,7 @@ curseforge{
   project{
   //SBM Colored Chests
     id = '233511'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -350,7 +374,7 @@ curseforge{
   project{
   //SBM Wooden Rails
     id = '233655'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -380,7 +404,7 @@ curseforge{
   project{
   //ICBM - Classic
     id = '244451'
-    //relations curseRelations
+    ////relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -395,7 +419,7 @@ curseforge{
   project{
   //VE-FluidHandeling
     id = '262806'
-    //relations curseRelations
+    ////relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -410,7 +434,7 @@ curseforge{
   project{
   //SBM-GasCan
     id = '263785'
-    relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -425,7 +449,7 @@ curseforge{
   project{
   //BBM-Armory
     id = '235545'
-    //relations curseRelationsVE
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -440,7 +464,16 @@ curseforge{
   project{
   //ICBM Sentries
     id = '266848'
-    //relations curseRelationsVE
+    relations {
+      optionalLibrary 'cofhcore'
+      optionalLibrary 'thermal-foundation'
+      optionalLibrary 'thermalexpansion'
+      requiredDependency 'voltz-engine'
+      optionalLibrary 'notenoughitems'
+      optionalLibrary 'waila'
+      optionalLibrary 'opencomputers'
+      requiredDependency 'the-armory'
+    }
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -453,7 +486,7 @@ curseforge{
     }
   }
   project{
-  //ICBM Sentries
+  //Sentry-AA
     id = '266845'
     //relations curseRelationsVE
     releaseType = "alpha"
@@ -465,6 +498,126 @@ curseforge{
     }
     addArtifact(deobfJar){
       displayName = "Sentry-AA ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //SBM-OilOre
+    id = '267405'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //ComeCloser
+    id = '280535'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "ComeCloser ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "ComeCloser ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //SBM-Snow Power
+    id = '286867'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "SBM-Snow Power ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Snow Power ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //Night Vision Decay Fix
+    id = '290156'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //[SBM] Merpig
+    id = '291703'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //World Of Boxes
+    id = '291482'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "World Of Boxes ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "World Of Boxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //SBM-JukeBox
+    id = '292430'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+  }
+  project{
+  //Atomic Science
+    id = '293507'
+    ////relations curseRelationsSVF
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    mainArtifact(jar) {
+      displayName = "Atomic Science ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "Atomic Science ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
 }
