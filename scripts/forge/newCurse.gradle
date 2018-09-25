@@ -25,7 +25,7 @@ def curseRelations = {
     optionalLibrary 'cofhcore'
     optionalLibrary 'thermal-foundation'
     optionalLibrary 'thermalexpansion'
-    requiredDependency 'voltz-engine'
+    requiredLibrary 'voltz-engine'
     optionalLibrary 'notenoughitems'
     optionalLibrary 'waila'
     optionalLibrary 'opencomputers'
@@ -42,11 +42,11 @@ def curseRelationsNV = {
 }
 
 def curseRelationsSVF = {
-  requiredDependency 've-fluidhandling'
+  requiredLibrary 've-fluidhandling'
 }
 
 def curseRelationsWB = {
-  requiredDependency 've-fluidhandling'
+  requiredLibrary 've-fluidhandling'
 }
 
 curseforge{
@@ -59,7 +59,7 @@ curseforge{
   project {
   // VoltzEngine
     id = "227048"
-    relations curseRelationsVE
+    //relations curseRelationsVE
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
@@ -74,7 +74,7 @@ curseforge{
   project {
   //ICBM
     id = '225502'
-    relations curseRelations
+    //relations curseRelations
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
@@ -89,7 +89,7 @@ curseforge{
   project {
   //NotEnoughKeys
     id = '224614'
-    //relations curseRelations
+    ////relations curseRelations
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "release"
@@ -104,7 +104,7 @@ curseforge{
   project{
   //MiliraryBaseDecor
     id = '244730'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     changelog = file('changelog.html')
     changelogType = 'html'
@@ -119,7 +119,7 @@ curseforge{
   project{
   //Basic Industry
     id = '256398'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -134,7 +134,7 @@ curseforge{
   project{
   //MFFS
     id = '238546'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -149,7 +149,7 @@ curseforge{
   project{
   //SBM Helm Bucket
     id = '256467'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -164,7 +164,7 @@ curseforge{
   project{
   //SBM Bagable Plants
     id = '256548'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -179,7 +179,7 @@ curseforge{
   project{
   //SBM Cacti Bucket
     id = '256605'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -194,7 +194,7 @@ curseforge{
   project{
   //Assembly Line
     id = '235544'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -209,7 +209,7 @@ curseforge{
   project{
   //SBM Magic Mirror
     id = '250881'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -224,7 +224,7 @@ curseforge{
   project{
   //SBM Wooden Shears
     id = '250880'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -239,7 +239,7 @@ curseforge{
   project{
   //SBM CardboardBoxes
     id = '248343'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -254,7 +254,7 @@ curseforge{
   project{
   //Progressive World Cleanup
     id = '246228'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -269,7 +269,7 @@ curseforge{
   project{
   //SBM Bone Torch
     id = '238695'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -284,7 +284,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    //relations curseRelationsWB
+    ////relations curseRelationsWB
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -299,7 +299,7 @@ curseforge{
   project{
   //SBM Red Cow
     id = '233525'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -314,7 +314,7 @@ curseforge{
   project{
   //Addicted To Red
     id = '236575'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -329,7 +329,7 @@ curseforge{
   project{
   //AI Improvements
     id = '233019'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -344,7 +344,7 @@ curseforge{
   project{
   //External Announcements
     id = '243419'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -359,7 +359,7 @@ curseforge{
   project{
   //SBM Colored Chests
     id = '233511'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -374,7 +374,7 @@ curseforge{
   project{
   //SBM Wooden Rails
     id = '233655'
-    //relations curseRelationsNV
+    ////relations curseRelationsNV
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -389,7 +389,7 @@ curseforge{
   project{
   //Artillects
     id = '224319'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -404,7 +404,7 @@ curseforge{
   project{
   //ICBM - Classic
     id = '244451'
-    //relations curseRelations
+    ////relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -419,7 +419,7 @@ curseforge{
   project{
   //VE-FluidHandeling
     id = '262806'
-    //relations curseRelations
+    ////relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -434,7 +434,7 @@ curseforge{
   project{
   //SBM-GasCan
     id = '263785'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -449,7 +449,7 @@ curseforge{
   project{
   //BBM-Armory
     id = '235545'
-    relations curseRelations
+    //relations curseRelations
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -468,11 +468,11 @@ curseforge{
       optionalLibrary 'cofhcore'
     	optionalLibrary 'thermal-foundation'
     	optionalLibrary 'thermalexpansion'
-    	requiredDependency 'voltz-engine'
+    	requiredLibrary 'voltz-engine'
     	optionalLibrary 'notenoughitems'
     	optionalLibrary 'waila'
     	optionalLibrary 'opencomputers'
-    	requiredDependency 'the-armory'
+    	requiredLibrary 'the-armory'
     }
     releaseType = "alpha"
     addGameVersion minecraft.version
@@ -488,7 +488,7 @@ curseforge{
   project{
   //Sentry-AA
     id = '266845'
-    relations curseRelationsVE
+    //relations curseRelationsVE
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -503,7 +503,7 @@ curseforge{
   project{
   //SBM-OilOre
     id = '267405'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -518,7 +518,7 @@ curseforge{
   project{
   //ComeCloser
     id = '280535'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -533,7 +533,7 @@ curseforge{
   project{
   //SBM-Snow Power
     id = '286867'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -548,7 +548,7 @@ curseforge{
   project{
   //Night Vision Decay Fix
     id = '290156'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -563,7 +563,7 @@ curseforge{
   project{
   //[SBM] Merpig
     id = '291703'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -578,7 +578,7 @@ curseforge{
   project{
   //World Of Boxes
     id = '291482'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -593,7 +593,7 @@ curseforge{
   project{
   //SBM-JukeBox
     id = '292430'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
@@ -608,7 +608,7 @@ curseforge{
   project{
   //Atomic Science
     id = '293507'
-    //relations curseRelationsSVF
+    ////relations curseRelationsSVF
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
