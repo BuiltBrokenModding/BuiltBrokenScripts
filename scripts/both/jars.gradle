@@ -41,7 +41,9 @@ if (project.hasProperty("coremod"))
                "Implementation-Version": version,
                "Git-Hash": ext.GitHash,
                "FMLCorePlugin": coremod,
-               "FMLCorePluginContainsFMLMod": "true")
+               "FMLCorePluginContainsFMLMod": "true",
+               "Implementation-Vendor" :"BuiltBrokenModding",
+               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")],)))
     }
 }
 else
@@ -51,7 +53,9 @@ else
                "Created-By": project.CurrentJVM,
                "Implementation-Title": archivesBaseName,
                "Implementation-Version": version,
-               "Git-Hash": ext.GitHash)
+               "Git-Hash": ext.GitHash,
+               "Implementation-Vendor" :"BuiltBrokenModding",
+               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")],))
     }
 }
 
