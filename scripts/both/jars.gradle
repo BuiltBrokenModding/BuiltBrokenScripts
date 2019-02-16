@@ -43,7 +43,7 @@ if (project.hasProperty("coremod"))
                "FMLCorePlugin": coremod,
                "FMLCorePluginContainsFMLMod": "true",
                "Implementation-Vendor" :"BuiltBrokenModding",
-               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")],)))
+               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),)))
     }
 }
 else
@@ -55,7 +55,7 @@ else
                "Implementation-Version": version,
                "Git-Hash": ext.GitHash,
                "Implementation-Vendor" :"BuiltBrokenModding",
-               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")],))
+               "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),))
     }
 }
 
