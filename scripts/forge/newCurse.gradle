@@ -390,7 +390,7 @@ curseforge{
       optionalLibrary 'notenoughitems'
       optionalLibrary 'waila'
       optionalLibrary 'opencomputers'
-      requiredDependency 'the-armory'
+      requiredLibrary 'the-armory'
     }
     releaseType = "alpha"
     addGameVersion minecraft.version
