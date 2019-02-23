@@ -25,10 +25,10 @@ repositories {
         name "xcompwiz"
         url "http://maven.xcompwiz.com"
     }
-    maven {
+    /*maven {
         name = "BluePower"
         url = "http://maven.bluepowermod.com/"
-    }
+    }*/
     maven {
         name = "ic2, forestry"
         url = "http://maven.ic2.player.to/"
