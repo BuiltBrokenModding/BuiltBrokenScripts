@@ -227,7 +227,9 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations 've-fluidhandling'
+    relations {
+        requiredLibrary 've-fluidhandling' // ve-fluidhandeling is required
+      }
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
