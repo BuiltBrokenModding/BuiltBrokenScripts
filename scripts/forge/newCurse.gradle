@@ -227,7 +227,7 @@ curseforge{
   project{
   //SBM Wooden Buckets
     id = '233189'
-    relations curseRelationsWB
+    relations 've-fluidhandling'
     releaseType = "alpha"
     addGameVersion minecraft.version
     changelog = file('changelog.html')
