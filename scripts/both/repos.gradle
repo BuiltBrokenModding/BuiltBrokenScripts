@@ -28,11 +28,11 @@ repositories {
     /*maven {
         name = "BluePower"
         url = "http://maven.bluepowermod.com/"
-    }
+    }*/
     maven {
         name = "ic2, forestry"
         url = "http://maven.ic2.player.to/"
-    }*/
+    }
     maven {
         name = "IGW"
         url = "http://maven.k-4u.nl/"
