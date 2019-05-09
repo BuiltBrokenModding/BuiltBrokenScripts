@@ -57,7 +57,7 @@ task makeChangelog(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
     //filePath = "changelog.html"
     file = new File("changelog.html");
     untaggedName = "Current release ${project.version}"
-    fromCommit = startGitRev
+    fromRef = startGitRev
     toRef =  "HEAD"
     templateContent = """
 {{#tags}}
