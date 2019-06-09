@@ -6,6 +6,10 @@ repositories {
         url "http://box1.dmodoomsirius.me:8081/artifactory/libs-release/"
     }*/
     maven {
+            name = "tterrag"
+            url = "https://maven.tterrag.com/"
+    }
+    maven {
         name "Mobius Repo"
         url "http://mobiusstrip.eu/maven"
     }
