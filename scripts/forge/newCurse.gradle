@@ -635,4 +635,19 @@ curseforge{
       displayName = "SBM-Metal-Sheep ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
+  project {
+  //SBM-BaggableMobs
+    id = '312123'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "release"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-BagglableMobs version: ${project.version}"
+    }
+    addArtifact (deobfJar){
+           displayName = "SBM-BagglableMobs deobf: ${project.version}"
+  }
+}
 }
