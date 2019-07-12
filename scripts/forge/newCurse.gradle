@@ -641,13 +641,13 @@ curseforge{
     ////relations curseRelations
     changelog = file('changelog.html')
     changelogType = 'html'
-    releaseType = "release"
+    releaseType = "alpha"
     addGameVersion minecraft.version
     mainArtifact(jar) {
-      displayName = "SBM-BagglableMobs version: ${project.version}"
+      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
-    addArtifact (deobfJar){
-           displayName = "SBM-BagglableMobs deobf: ${project.version}"
+    addArtifact(deobfJar){
+      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
   }
 }
 }
