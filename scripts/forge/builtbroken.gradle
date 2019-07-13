@@ -19,12 +19,12 @@ apply plugin: 'scala'
 
 minecraft {
     /*version = "1.12.2-14.23.4.2759"
-    runDir = "run"*/
+    runDir = "run"
     replace "@MAJOR@", version_major
     replace "@MINOR@", version_minor
     replace "@REVIS@", version_revis
     replace "@BUILD@", project.getBuildNumber()
-    replace "@MC@", minecraft.version
+    replace "@MC@", minecraft.version*/
 
         // The mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   Snapshot are built nightly.
