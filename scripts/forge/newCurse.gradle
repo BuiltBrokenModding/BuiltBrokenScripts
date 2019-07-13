@@ -162,7 +162,7 @@ curseforge{
     }
   }
   project{
-  //SBM Bagable Plants
+  //SBM Baggable Plants
     id = '256548'
     ////relations curseRelationsNV
     releaseType = "alpha"
@@ -170,10 +170,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BagablePlants ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
     }
   }
   project{
