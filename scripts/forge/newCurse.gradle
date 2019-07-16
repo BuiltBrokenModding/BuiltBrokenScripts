@@ -650,4 +650,19 @@ curseforge{
       displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
   }
 }
+project {
+  //SBM-BashFireMakeRock
+    id = '317075'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
 }
