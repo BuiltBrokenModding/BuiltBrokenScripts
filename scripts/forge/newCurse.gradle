@@ -661,8 +661,8 @@ project {
     mainArtifact(jar) {
       displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
-    addArtifact(deobfJar){
-      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
-  }
+    //addArtifact(deobfJar){
+     // displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+ // }
 }
 }
