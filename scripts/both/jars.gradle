@@ -51,7 +51,7 @@ else
                "Created-By": project.CurrentJVM,
                "Implementation-Title": archivesBaseName,
                "Implementation-Version": version,
-               "Git-Hash": ext.GitHash
+               "Git-Hash": ext.GitHash)
     }
 }
 
