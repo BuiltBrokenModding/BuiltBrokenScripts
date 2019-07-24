@@ -28,16 +28,6 @@ ext.CurrentJVM = {
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 println "Current Java version = " + currentJvm
 
-import org.ajoberstar.grgit.*
-/*
-defines gitHash
-*/
-def gitHash = 'unknown'
-if (new File(projectDir, '.git').exists()) {
-    def repo = Grgit.open(project.file('.'))
-    gitHash = repo.log().find().abbreviatedId
-}
-
 /*
 Creats a shared Manifest for each jar to prevent copy and paste stuff.
 
