@@ -12,7 +12,7 @@ buildscript {
 //Checks if a project has a property called minecraft.
 if (project.hasProperty("minecraft"))
     {
-    version = "${project.MC_VERSION()}-${version_major}.${version_minor}.${version_revis}b" + project.getBuildNumber()
+    version = "${project.MC_VERSION}-${version_major}.${version_minor}.${version_revis}b" + project.getBuildNumber()
     }
 else 
     (
