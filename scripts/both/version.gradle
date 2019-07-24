@@ -1,4 +1,13 @@
-
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+    }
+}
 
 //Checks if a project has a property called minecraft.
 if (project.hasProperty("minecraft"))
