@@ -1,7 +1,7 @@
 processResources {
     // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+    //inputs.property "mcversion", project.minecraft.version
     inputs.property "modname", project.archivebase
     inputs.property "url", "http://builtbroken.com/"
     inputs.property "description", project.description
@@ -14,7 +14,6 @@ processResources {
   
         expand([
                 'version'    : project.version,
-                'mcversion'  : project.minecraft.version,
                 'description': project.description,
                 'url'        : "http://builtbroken.com/",
                 'modname'    : project.archivebase
