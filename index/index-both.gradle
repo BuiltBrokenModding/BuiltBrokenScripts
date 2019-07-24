@@ -1,6 +1,7 @@
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/clean.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/changelog.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/1.14.2/scripts/both/version.gradle'
+apply from 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/git.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/jars.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/archive.gradle'
 apply from: 'https://raw.githubusercontent.com/BuiltBrokenModding/BuiltBrokenScripts/universal/scripts/both/repos.gradle'
