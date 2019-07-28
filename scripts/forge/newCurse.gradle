@@ -665,4 +665,19 @@ project {
       displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
   }
 }
+project {
+  //SBM-BearTrap
+    id = '320992'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-BearTrap ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-BearTrap ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
 }
