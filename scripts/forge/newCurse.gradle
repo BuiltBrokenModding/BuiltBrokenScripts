@@ -695,4 +695,185 @@ project {
       displayName = "SBM-BreadStone ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
   }
 }
+project {
+  //SBM-CharcoalBlock
+    id = '312122'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-DeadMans Satchel
+    id = '315998'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Dual Wither
+    id = '305094'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Elevators
+    id = '316108'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Elevators ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Elevators ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Armor Setter
+    id = '324449'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Grappling Hook
+    id = '262243'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Growmeal
+    id = '315674'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Growmeal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Growmeal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Hand-Held Piston
+    id = '324514'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Infinite Falling
+    id = '315678'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Lizard Doggo
+    id = '311217'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Midas Zombie
+    id = '321333'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+project {
+  //SBM-Punt Animal
+    id = '313124'
+    ////relations curseRelations
+    changelog = file('changelog.html')
+    changelogType = 'html'
+    releaseType = "alpha"
+    addGameVersion minecraft.version
+    mainArtifact(jar) {
+      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+    }
+    addArtifact(deobfJar){
+      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+  }
+}
+
 }
