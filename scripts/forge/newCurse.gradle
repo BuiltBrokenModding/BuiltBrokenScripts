@@ -63,7 +63,6 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "VoltzEngine ${project.version}-UNSTABLE build " + project.getBuildNumber() +  " for " + minecraft.version
     }
@@ -78,7 +77,6 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "ICBM ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -93,7 +91,6 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "release"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "NEK version: ${project.version}"
     }
@@ -108,7 +105,6 @@ curseforge{
     releaseType = "alpha"
     changelog = file('changelog.html')
     changelogType = 'html'
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -121,7 +117,6 @@ curseforge{
     id = '256398'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -136,7 +131,6 @@ curseforge{
     id = '238546'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -151,7 +145,6 @@ curseforge{
     id = '256467'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -166,7 +159,6 @@ curseforge{
     id = '256548'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -181,7 +173,6 @@ curseforge{
     id = '256605'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -196,7 +187,6 @@ curseforge{
     id = '235544'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -211,7 +201,6 @@ curseforge{
     id = '250881'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -226,7 +215,6 @@ curseforge{
     id = '250880'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -241,7 +229,6 @@ curseforge{
     id = '248343'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -256,7 +243,6 @@ curseforge{
     id = '246228'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -271,7 +257,6 @@ curseforge{
     id = '238695'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -286,7 +271,6 @@ curseforge{
     id = '233189'
     ////relations curseRelationsWB
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -301,7 +285,6 @@ curseforge{
     id = '233525'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -316,7 +299,6 @@ curseforge{
     id = '236575'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -331,7 +313,6 @@ curseforge{
     id = '233019'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -346,7 +327,6 @@ curseforge{
     id = '243419'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -361,7 +341,6 @@ curseforge{
     id = '233511'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -376,7 +355,6 @@ curseforge{
     id = '233655'
     ////relations curseRelationsNV
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -391,7 +369,6 @@ curseforge{
     id = '224319'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -406,7 +383,6 @@ curseforge{
     id = '244451'
     ////relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -421,7 +397,6 @@ curseforge{
     id = '262806'
     ////relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -436,7 +411,6 @@ curseforge{
     id = '263785'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -451,7 +425,6 @@ curseforge{
     id = '235545'
     //relations curseRelations
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -475,7 +448,6 @@ curseforge{
     	requiredLibrary 'the-armory'
     }
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -490,7 +462,6 @@ curseforge{
     id = '266845'
     //relations curseRelationsVE
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -505,7 +476,6 @@ curseforge{
     id = '267405'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -520,7 +490,6 @@ curseforge{
     id = '280535'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -535,7 +504,6 @@ curseforge{
     id = '286867'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -550,7 +518,6 @@ curseforge{
     id = '290156'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -565,7 +532,6 @@ curseforge{
     id = '291703'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -580,7 +546,6 @@ curseforge{
     id = '291482'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -595,7 +560,6 @@ curseforge{
     id = '292430'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -610,7 +574,6 @@ curseforge{
     id = '293507'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -625,7 +588,6 @@ curseforge{
     id = '315625'
     ////relations curseRelationsSVF
     releaseType = "alpha"
-    addGameVersion minecraft.version
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
@@ -642,7 +604,6 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -657,7 +618,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
