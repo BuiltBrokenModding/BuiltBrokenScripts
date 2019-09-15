@@ -64,7 +64,7 @@ curseforge{
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "VoltzEngine ${project.version}-UNSTABLE build " + project.getBuildNumber() +  " for " + minecraft.version
+      displayName = "VoltzEngine ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
       displayName = "VoltzEngine ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
@@ -148,7 +148,7 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
+      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
       displayName = "SBM-HelmBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
@@ -204,7 +204,7 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
+      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
       displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
@@ -302,7 +302,7 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "AddictedToRed ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
+      displayName = "AddictedToRed ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
       displayName = "AddictedToRed ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
