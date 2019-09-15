@@ -632,7 +632,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-BearTrap ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -647,7 +646,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-BreadStone ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -662,7 +660,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -677,7 +674,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -692,7 +688,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Dual Wither ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -707,7 +702,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Elevators ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -722,7 +716,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Armor Setter ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -737,7 +730,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -752,7 +744,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Growmeal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -767,7 +758,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -782,7 +772,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -797,7 +786,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -812,7 +800,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
@@ -827,7 +814,6 @@ project {
     changelog = file('changelog.html')
     changelogType = 'html'
     releaseType = "alpha"
-    addGameVersion minecraft.version
     mainArtifact(jar) {
       displayName = "SBM-Punt Animal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
     }
