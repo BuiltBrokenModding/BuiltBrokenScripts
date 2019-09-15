@@ -108,9 +108,7 @@ task printDependencies {
     doLast {
          file("CompiledWith.txt").text = configurations.compile.collect { it.getName() };
      }
-     mustRunAfter "setupDecompWorkspace"
-     mustRunAfter "setupDevWorkspace"
-     mustRunAfter "setupCiWorkspace"
+     mustRunAfter "jar"
 }
 
 tasks.build.dependsOn printDependencies
