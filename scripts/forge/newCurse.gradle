@@ -67,7 +67,7 @@ curseforge{
       displayName = "VoltzEngine ${project.version}-UNSTABLE build " + project.getBuildNumber() +  " for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "VoltzEngine ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "VoltzEngine ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project {
@@ -78,10 +78,10 @@ curseforge{
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "ICBM ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ICBM ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-        displayName = "ICBM ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+        displayName = "ICBM ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
   }
   project {
@@ -106,10 +106,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE-Deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "MilitaryBaseDecor ${project.version}-UNSTABLE-Deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -120,10 +120,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Basic Industry ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Basic Industry ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Basic Industry ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Basic Industry ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -134,10 +134,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "MFFS ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "MFFS ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "MFFS ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "MFFS ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -151,7 +151,7 @@ curseforge{
       displayName = "SBM-HelmBucket ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-HelmBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -162,10 +162,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BaggablePlants ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -176,10 +176,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CactiBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -190,10 +190,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Assembly Line ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Assembly Line ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Assembly Line ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -207,7 +207,7 @@ curseforge{
       displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Magic-Mirror ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -218,10 +218,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-WoodenShears ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -232,10 +232,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CardboardBoxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -246,10 +246,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ProgressiveWorldCleanup ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -260,10 +260,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BoneTorch ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -274,10 +274,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-WoodenBucket ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -288,10 +288,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-RedCow ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-RedCow ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-RedCow ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-RedCow ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -305,7 +305,7 @@ curseforge{
       displayName = "AddictedToRed ${project.version}-UNSTABLE build " + project.getBuildNumber() + "for " + minecraft.version
     }
     addArtifact(deobfJar){
-      displayName = "AddictedToRed ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "AddictedToRed ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -316,10 +316,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "AI Improvements ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "AI Improvements ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "AI Improvements ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "AI Improvements ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -330,10 +330,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Announcement-Mod ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Announcement-Mod ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Announcement-Mod ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Announcement-Mod ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -344,10 +344,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ColoredChests ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ColoredChests ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "ColoredChests ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ColoredChests ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -358,10 +358,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "WoodenRails ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "WoodenRails ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "WoodenRails ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "WoodenRails ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -372,10 +372,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Artillects ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Artillects ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Artillects ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Artillects ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -386,10 +386,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ICBM - Classic ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ICBM - Classic ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "ICBM - Classic ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ICBM - Classic ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -400,10 +400,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "VE-FluidHandling ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "VE-FluidHandling ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "VE-FluidHandling ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "VE-FluidHandling ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -414,10 +414,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-GasCan ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-GasCan ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-GasCan ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-GasCan ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -428,10 +428,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "BBM-Armory ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "BBM-Armory ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "BBM-Armory ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "BBM-Armory ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -451,10 +451,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ICBM Sentries ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ICBM Sentries ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "ICBM Sentries ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ICBM Sentries ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -465,10 +465,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Sentry-AA ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Sentry-AA ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Sentry-AA ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Sentry-AA ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -479,10 +479,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-OilOre ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-OilOre ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -493,10 +493,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "ComeCloser ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ComeCloser ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "ComeCloser ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "ComeCloser ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -507,10 +507,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-Snow Power ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Snow Power ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Snow Power ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Snow Power ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -521,10 +521,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Night Vision Decay Fix ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -535,10 +535,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "[SBM] Merpig ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "[SBM] Merpig ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "[SBM] Merpig ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -549,10 +549,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "World Of Boxes ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "World Of Boxes ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "World Of Boxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "World Of Boxes ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -563,10 +563,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-JukeBox ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-JukeBox ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-JukeBox ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -577,10 +577,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "Atomic Science ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Atomic Science ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "Atomic Science ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "Atomic Science ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project{
@@ -591,10 +591,10 @@ curseforge{
     changelog = file('changelog.html')
     changelogType = 'html'
     mainArtifact(jar) {
-      displayName = "SBM-Metal-Sheep ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Metal-Sheep ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Metal-Sheep ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Metal-Sheep ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
     }
   }
   project {
@@ -605,10 +605,10 @@ curseforge{
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Baggable-Mobs ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -619,10 +619,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BashFireMakeRock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -633,10 +633,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-BearTrap ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BearTrap ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BearTrap ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BearTrap ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -647,10 +647,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-BreadStone ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BreadStone ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-BreadStone ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-BreadStone ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -661,10 +661,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-CharcoalBlock ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -675,10 +675,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-DeadMans Satchel ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -689,10 +689,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Dual Wither ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -703,10 +703,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Elevators ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Elevators ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Elevators ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Elevators ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -717,10 +717,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Armor Setter ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -731,10 +731,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Grappling Hook ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -745,10 +745,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Growmeal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Growmeal ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Growmeal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Growmeal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -759,10 +759,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Hand-Held Piston ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -773,10 +773,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Infinite Falling ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -787,10 +787,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Lizard Doggo ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -801,10 +801,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Midas Zombie ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 project {
@@ -815,10 +815,10 @@ project {
     changelogType = 'html'
     releaseType = "alpha"
     mainArtifact(jar) {
-      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE build " + project.getBuildNumber()
     }
     addArtifact(deobfJar){
-      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber() + " for " + minecraft.version
+      displayName = "SBM-Punt Animal ${project.version}-UNSTABLE-deobf build " + project.getBuildNumber()
   }
 }
 
