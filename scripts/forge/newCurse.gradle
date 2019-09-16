@@ -5,7 +5,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.1.0"
+    classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.4.0"
   }
 }
 
