@@ -1,6 +1,4 @@
 dependencies 
 {
-    compile 'junit:junit:4.11'
-    compile "com.builtbroken.minecraftjunit:MinecraftJUnit:1.7.10-0.+:deobf"
-    compile "dev.builtbroken.voltzengine:VoltzEngine:1.7.10-0.+:deobf-dev"
+    
 }
