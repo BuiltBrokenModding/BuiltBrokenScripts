@@ -1,7 +1,7 @@
 dependencies 
 {
-    compile 'junit:junit:4.11'
-    compile "com.builtbroken.codinglib:CodingLib:0.2.8b50"
+    //compile 'junit:junit:4.11'
+    //compile "com.builtbroken.codinglib:CodingLib:0.2.8b50"
     //compile 'com.google.apis:google-api-services-analytics:v3-rev121-1.21.0'
-    testRuntime 'org.slf4j:slf4j-simple:1.7.10'
+    //testRuntime 'org.slf4j:slf4j-simple:1.7.10'
 }
